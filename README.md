@@ -1,12 +1,9 @@
-## 8. Group2 Stroke Prediction
-
-
 ## 1. Dataset 
 
-**Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))
-**Total Patient:** 5,110
-**Total Features:** 11
-**Classification Problems:** Binary Classification
+**Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))<br>
+**Total Patient:** 5,110 <br>
+**Total Features:** 11 <br>
+**Classification Problems:** Binary Classification <br>
 **Fields:**
 1) id: รหัสประจำตัวผู้ป่วย 
 2) gender: "Male", "Female" หรือ "Other"  
@@ -19,19 +16,14 @@
 9) avg_glucose_level: ค่าเฉลี่ยน้ำตาลในเลือด  
 10) bmi: ดัชนีมวลกาย
 11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
-*Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้*
-**Label:**
+*Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
+
+**`Label`**
 stroke: 1 หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0 หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง
 
 
-
-
-
-
-
 ## 2. Data Preperation
-
-
+**`Traditional ML`**
 
 
 ## 3. Experiment result and discussion
