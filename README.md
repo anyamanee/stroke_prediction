@@ -1,8 +1,8 @@
 ## 8. Group2 Stroke Prediction
-<hr>
+
 
 ## 1. Dataset 
-<hr>
+
 **Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))
 **Total Patient:** 5,110
 **Total Features:** 11
