@@ -1,4 +1,4 @@
-# stroke_prediction
+## Group2 Stroke Prediction
 
 <table>
   <caption>Free Coding Resources</caption>
