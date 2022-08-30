@@ -1,10 +1,10 @@
 ## 1. Dataset 
 
-Dataset descrption: Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))
-Total Patient: 5,110
-Total Features: 11
-Classification Problems: Binary Classification
-Fields:
+**Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))<br>
+**Total Patient:** 5,110
+**Total Features:** 11
+**Classification Problems:** Binary Classification
+**Fields:**
 1) id: รหัสประจำตัวผู้ป่วย 
 2) gender: "Male", "Female" หรือ "Other"  
 3) age: อายุของผู้ป่วย  
@@ -17,7 +17,7 @@ Fields:
 10) bmi: ดัชนีมวลกาย
 11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
 *Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้*
-Label:
+**Label:**
 stroke: 1 หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0 หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง
 
 
