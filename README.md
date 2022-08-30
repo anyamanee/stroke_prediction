@@ -1,4 +1,4 @@
-### 8. Group2 Stroke Prediction
+## 8. Group2 Stroke Prediction
 <hr>
 
 ## 1. Dataset 
