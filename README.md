@@ -30,23 +30,21 @@ stroke: 1 หากผู้ป่วยเป็นโรคหลอดเล�
 
 
 ## 2. Data Preperation
-<hr>
 
 
 
 
 ## 3. Experiment result and discussion
-<hr>
 
 
 ## 4. Conclusion
-<hr>
+
 
 ### Pros and Cons
 - เปรียบเทียบข้อดีข้อเสียของการใช้ ML และ MLP
 
 ## 5. Recommendation
-<hr>
+
 
 
 
