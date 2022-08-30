@@ -14,12 +14,12 @@
   </tr>
   <tr>
     <td>6410422017</td>
-    <td>Academind</td>
+    <td>Peerat Pookpanich</td>
     <td>Prepare dataset </td>
   </tr>
   <tr>
     <td>6410422031</td>
-    <td>The Coding Train</td>
+    <td>Anyamanee Pornpanvattana</td>
     <td>Prepare dataset </td>
   </tr>
 </table>
