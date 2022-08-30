@@ -24,7 +24,7 @@ stroke: 1 หากผู้ป่วยเป็นโรคหลอดเล�
 
 ## 2. Data Preperation
 **'Traditional ML'**
-
+**`Traditional ML`**
 
 
 ## 3. Experiment result and discussion
