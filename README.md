@@ -18,7 +18,7 @@
 11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
 *Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
 
-**`Label`**
+**Label**
 stroke: 1 หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0 หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง
 
 
