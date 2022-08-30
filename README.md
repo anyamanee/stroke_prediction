@@ -1,6 +1,3 @@
-## 8. Group2 Stroke Prediction
-
-
 ## 1. Dataset 
 
 **Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))
