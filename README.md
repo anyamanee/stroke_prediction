@@ -1,25 +1,25 @@
-## Group2 Stroke Prediction
+### 8. Group2 Stroke Prediction
+<hr>
 
 <table>
-  <caption>Free Coding Resources</caption>
   <tr>
-    <th>Sites</th>
-    <th>Youtube Channels</th>
-    <th>Mobile Appss</th>
+    <td>6410422005</td>
+    <td>Metpiya Learakkakorn</td>
+    <td>Prepare dataset</td>
   </tr>
   <tr>
-    <td>Freecode Camp</td>
-    <td>Freecode Camp</td>
-    <td>Enki</td>
+    <td>6410422015</td>
+    <td>Khodchapan Vitheethum</td>
+    <td>Prepare dataset</td>
   </tr>
   <tr>
-    <td>W3Schools</td>
+    <td>6410422017</td>
     <td>Academind</td>
-    <td>Programming Hero</td>
+    <td>Prepare dataset </td>
   </tr>
   <tr>
-    <td>Khan Academy</td>
+    <td>6410422031</td>
     <td>The Coding Train</td>
-    <td>Solo learn</td>
+    <td>Prepare dataset </td>
   </tr>
 </table>
