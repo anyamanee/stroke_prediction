@@ -57,21 +57,21 @@ stroke: 1 หากผู้ป่วยเป็นโรคหลอดเล�
   <tr>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>`Prepare dataset` `Data cleaning` `EDA`</td>
+    <td>**`Prepare datase`** **`Data cleaning`** **`EDA`**</td>
   </tr>
   <tr>
     <td>6410422015</td>
     <td>Khodchapan Vitheethum</td>
-    <td>`Prepare dataset` `Data cleaning` `EDA`t</td>
+    <td>**`Prepare datase`** **`Data cleaning`** **`EDA`**</td>
   </tr>
   <tr>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
-    <td>Prepare dataset </td>
+    <td>**`Prepare datase`** **`Data cleaning`** **`EDA`**</td>
   </tr>
   <tr>
     <td>6410422031</td>
     <td>Anyamanee Pornpanvattana</td>
-    <td>`Prepare dataset` `Data cleaning` `EDA`</td>
+    <td>**`Prepare datase`** **`Data cleaning`** **`EDA`**</td>
   </tr>
 </table>
