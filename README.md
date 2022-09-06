@@ -102,7 +102,6 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
     <td>0.221622</td>
   </tr>
 </table>
-
 **`Multilayer Perceptron (MLP)`**
 <table>
   <tr>
@@ -147,7 +146,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
     <td>0</td>
     <td>0</td>
   </tr>
-
+  </table>
 
 ## 6. Experiment result and discussion
 สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
