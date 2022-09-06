@@ -8,7 +8,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 - XX
 
 ## 1. Introduction
-การศึกษาในครั้งนี้ใช้ข้อมูลเรื่อง Stroke Prediction โดยข้อมูลจะมีลักษณะเป็น **`Binary classification`** คือการทำนายว่าผู้ป่วยคนนั้นมีโอกาสเป็นผู้ป่วยเป็นโรคหลอดเลือดสมองหรือไม่ (1: หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0: หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) ซึ่งพิจารณาจากรายละเอียดข้อมูลของผู้ป่วยเช่น อายุ, เพศ, โรคความดันโลหิตสูง, โรคหัวใจ และค่าเฉลี่ยน้ำตาลในเลือดเป็นต้น
+การศึกษาในครั้งนี้ใช้ข้อมูลเรื่อง Stroke Prediction โดยข้อมูลจะมีลักษณะเป็น **`Binary classification`** คือการทำนายว่าผู้ป่วยคนนั้นมีโอกาสเป็นผู้ป่วยเป็นโรคหลอดเลือดสมองหรือไม่ (1: หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0: หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) ซึ่งพิจารณาจากรายละเอียดข้อมูลของผู้ป่วยเช่น อายุ, เพศ, โรคความดันโลหิตสูง, โรคหัวใจ และค่าเฉลี่ยน้ำตาลในเลือด เป็นต้น
 
 ## 2. Data
 
@@ -106,7 +106,7 @@ Non-trainable params: 0<br>
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
-เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ซึ่งเป็นโมเดล 7 แรกที่มีค่า precition สูงที่สุด ได้ผลตามรามด้านล่าง
+เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ได้ผลตามตารางด้านล่าง <br>
 **`Traditional Machine Learning (ML)`**
 <table>
   <tr>
@@ -159,6 +159,8 @@ Non-trainable params: 0<br>
     <td>0.221622</td>
   </tr>
 </table>
+
+### 5.2 Multilayer Perceptron (MLP)
 
 **`Multilayer Perceptron (MLP)`**<br>
 Mean±SD of Accuracy = ( , )<br>
@@ -229,7 +231,7 @@ Mean±SD of Accuracy = ( , )<br>
     <td>Khodchapan Vitheethum</td>
     <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
-  <tr> 
+  <tr>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
     <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
