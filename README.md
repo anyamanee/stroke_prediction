@@ -3,9 +3,9 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 โดยการทดลองนี้มีจุดมุ่งหมายเพื่อเปรียบเทียบประสิทธิภาพของ Traditional Machine Learning (ML) และ Multilayer Perceptron (MLP) รวมถึงการปรับ Hyperparameter เพื่อความสมบูรณ์ของโมเดล ทางทีมคาดหวังว่าจะได้ประสบการณ์ในเรื่องนี้ และเป็นประโยชน์ต่อผู้ที่กำลังสนใจในเรียนนี้ 
 
 ## _Key Highlight_
-> XX
-> XX
-> XX
+- XX
+- XX
+- XX
 
 ## 1. Dataset 
 
