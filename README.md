@@ -107,7 +107,6 @@ Non-trainable params: 0<br>
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
 เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ได้ผลตามตารางด้านล่าง <br>
-**`Traditional Machine Learning (ML)`**
 <table>
   <tr>
     <th>Classification algorithm</th>
@@ -161,8 +160,6 @@ Non-trainable params: 0<br>
 </table>
 
 ### 5.2 Multilayer Perceptron (MLP)
-
-**`Multilayer Perceptron (MLP)`**<br>
 Mean±SD of Accuracy = ( , )<br>
 <table>
   <tr>
