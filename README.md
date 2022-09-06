@@ -108,13 +108,32 @@ Non-trainable params: 0<br>
 - Classification algorithm: 
 
 - RidgeClassifier
-  - alpha หรือ learning rate อยูที่ 0.0001
-  - solver คือ lsqr
+  - alpha หรือ learning rate: 0.0001
+  - solver: lsqr (Least-square regression)
 - LinearSVC
+  - C: 0.001
+  - multi_class: crammer_singer
+  - penalty: l2
+  - loss: hinge
 - SVC
+  - C: 1.5
+  - gamma: scale
+  - kernel: rbf
+  - random_state: 0
 - LogisticRegression
+  - C: 1
+  - max_iter: 100
+  - solver: sag
+  - penalty: l2
 - KNeighborsClassifier
+  - n_neighbors: 5
+  - leaf_size: 10
+  - weights: distance
 - RandomForestClassifier
+  - criterion: log_loss
+  - max_depth: 3 
+  - max_features: log2
+  - n_estimators: 400
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
@@ -174,7 +193,7 @@ Non-trainable params: 0<br>
 
 ### 5.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น โดยเราทำการเทรนโมเดลด้วย initial random weights ที่แตกต่างกัน 5 รอบ ได้ผลตามตารางดังนี้ <br>
-**`Mean±SD of Accuracy = ( , )`**<br>
+Mean±SD of Accuracy = ( , )<br>
 <table>
   <tr>
     <th>Round</th>
@@ -222,13 +241,10 @@ Non-trainable params: 0<br>
 
 ## 6. Experiment result and discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
-
 - การ normalization เราใช้ StandardScaler เนื่องจากข้อมูลในแต่ละ Features มีการแจกแจงปกติอยู่แล้ว
-
 - ข้อมูลในเรื่อง Stroke Prediction มีความ imbalance เราจึงเลือกใช้ SMOTE (synthetic minority over-sampling technique)  จัดการกับข้อมูลในชุดนี้ก่อนจะนำไปใช้สร้าง Model จริง<br>
 ในข้อมูล Train Set มีเพียง 195 instances เท่านั้นที่เป็น calss1 (หากผู้ป่วยเป็นโรคหลอดเลือดสมอง) แต่ในขณะที่ class0 (หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) มีถึง 3,892 instances<br>
 จากเหตุผลด้านบนทำให้ Model ไม่สามารถหา Pattern ที่แน่นอนของ calss1 ได้ดีนัก ส่งผลให้ค่า Accuracy, Precision, Recall, F1 ของ calss1 น้อยตามไปด้วย
-
 - Traditional Machine Learning (ML) ไม่จำเป็นต้องมีการ tuning hyperpsrsmeter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อยกว่า Multilayer Perceptron (MLP)
 
 
