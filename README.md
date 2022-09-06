@@ -169,7 +169,7 @@ Non-trainable params: 0<br>
     <td>0.221622</td>
   </tr>
 </table>
-โดยโมเดลเหล่านี้ไม่จำเป็นต้องมีการ tuning hyperpsrsmeter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อย
+
 
 ### 5.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น โดยเราทำการเทรนโมเดลด้วย initial random weights ที่แตกต่างกัน 5 รอบ ได้ผลตามตารางดังนี้ <br>
