@@ -8,9 +8,11 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 - XX
 
 ## 1. Introduction
-การศึกษาในครั้งนี้ใช้ข้อมูลเรื่อง Stroke Prediction คือการทำนายว่าผู้ป่วยนั้นมีโอกาสเป็นผู้ป่วยเป็นโรคหลอดเลือดสมองหรือไม่ โดยข้อมูลจะมีลักษณะเป็น **`binary classification`**
+การศึกษาในครั้งนี้ใช้ข้อมูลเรื่อง Stroke Prediction โดยข้อมูลจะมีลักษณะเป็น **`binary classification`** คือการทำนายว่าผู้ป่วยคนนั้นมีโอกาสเป็นผู้ป่วยเป็นโรคหลอดเลือดสมองหรือไม่ (1: หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0: หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) ซึ่งพิจารณาจากรายละเอียดข้อมูลของผู้ป่วยเช่น อายุ, เพศ, โรคความดันโลหิตสูง, โรคหัวใจ และค่าเฉลี่ยน้ำตาลในเลือดเป็นต้น
 
-## 1. Dataset 
+## 2. Data
+
+### Data source
 
 **Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))<br>
 **Total Patient:** 5,110 <br>
