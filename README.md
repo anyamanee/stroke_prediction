@@ -105,6 +105,8 @@ Non-trainable params: 0<br>
 ## 4. Training
 
 ## 5. Results
+### 5.1 Traditional Machine Learning (ML)
+เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ซึ่งเป็นโมเดล 7 แรกที่มีค่า precition สูงที่สุด ได้ผลตามรามด้านล่าง
 **`Traditional Machine Learning (ML)`**
 <table>
   <tr>
@@ -206,9 +208,9 @@ Mean±SD of Accuracy = ( , )<br>
   </table>
 
 ## 6. Experiment result and discussion
-- สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
+สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
 
-- สำหรับการ normalization เราใช้ StandardScaler เนื่องจากข้อมูลแต่ละ Features มีการแจกแจงของข้อมูลแบบปกติอยู่แล้ว
+สำหรับการ normalization เราใช้ StandardScaler
 
 
 ## 7. Conclusion
