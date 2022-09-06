@@ -105,8 +105,9 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
   </tr>
 </table>
 
-**`Multilayer Perceptron (MLP)`**
-mean±SD = ( , )
+**`Multilayer Perceptron (MLP)`**<br>
+Accuracy<br>
+Mean±SD = ( , )
 
 <table>
   <tr>
