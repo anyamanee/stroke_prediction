@@ -180,7 +180,7 @@ Non-trainable params: 0<br>
 
 
 ### 5.2 Multilayer Perceptron (MLP)
-Mean±SD of Accuracy = ( , )<br>
+**`Mean±SD of Accuracy = ( , )`**<br>
 <table>
   <tr>
     <th>Round</th>
@@ -244,21 +244,21 @@ Mean±SD of Accuracy = ( , )<br>
   <tr>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
   </tr>
   <tr>
     <td>6410422015</td>
     <td>Khodchapan Vitheethum</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
   </tr>
   <tr>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
   </tr>
   <tr>
     <td>6410422031</td>
     <td>Anyamanee Pornpanvattana</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion </td>
   </tr>
 </table>
