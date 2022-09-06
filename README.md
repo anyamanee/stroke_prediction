@@ -55,7 +55,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ## 6. Experiment result and discussion
 สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
 
-สำหรับการ normalization เราใช้ min-max normalization
+สำหรับการ normalization เราใช้ StandardScaler
 
 
 ## 7. Conclusion
