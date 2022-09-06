@@ -103,10 +103,21 @@ Non-trainable params: 0<br>
 </table>
 
 ## 4. Training
+### 4.1 Traditional Machine Learning (ML)
+เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** โดยในแต่ละ model มีการ tuning ดังนี้
+- Classification algorithm: 
+
+- RidgeClassifier
+  - alpha หรือ learning rate อยูที่ 0.0001
+  - solver คือ lsqr
+- LinearSVC
+- SVC
+- LogisticRegression
+- KNeighborsClassifier
+- RandomForestClassifier
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
-เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ได้ผลตามตารางด้านล่าง <br>
 
 <table>
   <tr>
