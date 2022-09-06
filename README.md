@@ -107,6 +107,7 @@ Non-trainable params: 0<br>
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
 เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** ได้ผลตามตารางด้านล่าง <br>
+
 <table>
   <tr>
     <th>Classification algorithm</th>
@@ -160,6 +161,7 @@ Non-trainable params: 0<br>
 </table>
 
 ### 5.2 Multilayer Perceptron (MLP)
+ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น
 Mean±SD of Accuracy = ( , )<br>
 <table>
   <tr>
@@ -207,9 +209,9 @@ Mean±SD of Accuracy = ( , )<br>
   </table>
 
 ## 6. Experiment result and discussion
-- สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
+สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
 
-- สำหรับการ normalization เราใช้ StandardScaler เนื่องจากข้อมูลในแต่ละ Fields มีการแจกแจงปกติอยู่แล้ว
+สำหรับการ normalization เราใช้ StandardScaler
 
 
 ## 7. Conclusion
