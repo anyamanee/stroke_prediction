@@ -17,23 +17,24 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 **Total Patient:** 5,110 <br>
 **Total Features:** 11 <br>
 **Classification Problems:** Binary Classification <br>
-**Fields:**
-1) id: รหัสประจำตัวผู้ป่วย 
-2) gender: "Male", "Female" หรือ "Other"  
-3) age: อายุของผู้ป่วย  
-4) hypertension: 0 หากผู้ป่วยไม่เป็นโรคความดันโลหิตสูง, 1 หากผู้ป่วยไม่เป็นโรคความดันโลหิตสูง  
-5) heart_disease: 0 หากผู้ป่วยไม่เป็นโรคหัวใจ, 1 หากผู้ป่วยเป็นโรคหัวใจ
-6) ever_married: "No" หรือ "Yes"  
-7) work_type: "children", "Govt_jov", "Never_worked", "Private" หรือ "Self-employed"  
-8) Residence_type: "Rural" หรือ "Urban"  
-9) avg_glucose_level: ค่าเฉลี่ยน้ำตาลในเลือด  
-10) bmi: ดัชนีมวลกาย
-11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
-*Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
 
-**Label:**
-stroke: 1 หากผู้ป่วยเป็นโรคหลอดเลือดสมอง, 0 หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง
+### EDA
 
+### Data preparation
+
+### Data preparation
+
+### Data pre-processing
+
+### Data postprocessing
+
+### Data splitting (train/val/test) 
+
+## 3. Network architecture
+
+## 4. Training
+
+## 5. Results
 
 ## 2. Data Preperation
 การเตรียมข้อมูลก่อน train model เราทำการ drop ค่า outliner ออก หลังจากนั้นจึงจัดการข้อมูล Binary category และ Multicategory โดยใช้ **`One-Hot encoding`** เพื่อเปลี่ยนข้อมูลที่เก็บในลักษณะ categorical ให้อยู่ในรูป Binary values เนื่องจากการทำ Machine leaning นั้น ต้องการข้อมูลในรูปแบบตัวเลขเพื่อใช้ในการ train และ predict โดยแปลงค่าในคอลัมน์ gender, ever_married, work_type, residence_type และ smoking_status เพื่อให้อยู่ในรูปแบบดังกล่าว <br>
@@ -70,21 +71,21 @@ stroke: 1 หากผู้ป่วยเป็นโรคหลอดเล�
   <tr>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
   <tr>
     <td>6410422015</td>
     <td>Khodchapan Vitheethum</td>
-    <td>Prepare datase, Data cleaning, EDA</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
   <tr>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
-    <td>Prepare datase, Data cleaning, EDA</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
   <tr>
     <td>6410422031</td>
     <td>Anyamanee Pornpanvattana</td>
-    <td>Prepare datase, Data cleaning, EDA</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
 </table>
