@@ -50,9 +50,10 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ## 4. Training
 
 ## 5. Results
+**`Traditional Machine Learning (ML)`**
 <table>
   <tr>
-    <th>Classification algorithmy</th>
+    <th>Classification algorithm</th>
     <th>Accuracy</th>
     <th>Precision</th>
     <th>Recall</th>
@@ -101,6 +102,51 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
     <td>0.221622</td>
   </tr>
 </table>
+
+**`Multilayer Perceptron (MLP)`**
+<table>
+  <tr>
+    <th>Round</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
 
 
 ## 6. Experiment result and discussion
