@@ -113,7 +113,7 @@ Non-trainable params: 0<br>
 ## 4. Training
 ### 4.1 Traditional Machine Learning (ML)
 เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** <br>
-จากนั้นเราใช้ **`K-Fold Cross Validation`** จำนวน 5 รอบในแต่ละโมเดลเพื่อหาค่าเฉลี่ยของ accuracy และเลือกโมเดลที่เหมาะสมกับชุดข้อมูล จากนั้นนำโมเดลที่ได้ไปปรับหาหาค่า **`Hyperparameter`** โดยใช้ **`GridSearchCV`** เพื่อหาค่าที่เหมาะสมกับโมเดลนั้นๆ <br>
+จากนั้นเราใช้ **`K-Fold Cross Validation`** จำนวน 5 รอบในแต่ละโมเดลเพื่อหาค่าเฉลี่ยของ accuracy และเลือกโมเดลที่เหมาะสมกับชุดข้อมูล และนำโมเดลที่ได้ไปปรับหาหาค่า **`Hyperparameter`** โดยใช้ **`GridSearchCV`** เพื่อหาค่าที่เหมาะสมกับโมเดลนั้นๆ <br>
 โดยในแต่ละ model มีการ tuning ดังนี้
 
 - RidgeClassifier     : RidgeClassifier(alpha = 0.0001, solver = 'lsqr')
