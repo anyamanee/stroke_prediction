@@ -12,7 +12,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 
 ## 2. Data
 
-### Data source
+### 2.1 Data source
 **Dataset descrption:**: Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))))<br>
 **Total Patient:** 5,110 <br>
 **Total Features:** 11 <br>
@@ -30,12 +30,12 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
 *Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
 
-### EDA
+### 2.2 EDA
 - XX
 - XX
 - XX
 
-### Data preparation
+### 2.3 Data preparation
 การเตรียมข้อมูลก่อน train model เราทำการ drop ค่า outliner ออก หลังจากนั้นจึงจัดการข้อมูล Binary category และ Multicategory โดยใช้ **`One-Hot encoding`** เพื่อเปลี่ยนข้อมูลที่เก็บในลักษณะ categorical ให้อยู่ในรูป Binary values เนื่องจากการทำ Machine leaning นั้น ต้องการข้อมูลในรูปแบบตัวเลขเพื่อใช้ในการ train และ predict โดยแปลงค่าในคอลัมน์ gender, ever_married, work_type, residence_type และ smoking_status เพื่อให้อยู่ในรูปแบบดังกล่าว <br>
 
 เนื่องจากข้อมูลของเรามีความ imbalance เราจึงเลือกใช้ **`SMOTE`** (synthetic minority over-sampling technique) ซึ่งเป็นเทคนิคที่ใช้ในการแก้ปัญหาการจำแนกข้อมูลที่ไม่สมดุลและทำการ normalize ค่าด้วย StandardScaler <br>
@@ -162,7 +162,7 @@ Non-trainable params: 0<br>
 
 ### 5.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น<br>
-**`Mean±SD of Accuracy = ( , )<br>`**
+**`Mean±SD of Accuracy = ( , )`**<br>
 <table>
   <tr>
     <th>Round</th>
@@ -227,21 +227,21 @@ Non-trainable params: 0<br>
   <tr>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP, Conclusion)</td>
   </tr>
   <tr>
     <td>6410422015</td>
     <td>Khodchapan Vitheethum</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Conclusion</td>
   </tr>
   <tr>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Conclusion</td>
   </tr>
   <tr>
     <td>6410422031</td>
     <td>Anyamanee Pornpanvattana</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Conclusion</td>
   </tr>
 </table>
