@@ -13,8 +13,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ## 2. Data
 
 ### Data source
-
-**Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))<br>
+**Dataset descrption:**: Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))))<br>
 **Total Patient:** 5,110 <br>
 **Total Features:** 11 <br>
 **Classification Problems:** Binary Classification <br>
