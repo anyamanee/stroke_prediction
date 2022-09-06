@@ -104,36 +104,16 @@ Non-trainable params: 0<br>
 
 ## 4. Training
 ### 4.1 Traditional Machine Learning (ML)
-เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`Classification algorithm`**, **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** โดยในแต่ละ model มีการ tuning ดังนี้
-- Classification algorithm: 
+เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** โดยในแต่ละ model มีการ tuning ดังนี้
 
-- RidgeClassifier
-  - alpha หรือ learning rate: 0.0001
-  - solver: lsqr (Least-square regression)
-- LinearSVC
-  - C: 0.001
-  - multi_class: crammer_singer
-  - penalty: l2
-  - loss: hinge
-- SVC
-  - C: 1.5
-  - gamma: scale
-  - kernel: rbf
-  - random_state: 0
-- LogisticRegression
-  - C: 1
-  - max_iter: 100
-  - solver: sag
-  - penalty: l2
-- KNeighborsClassifier
-  - n_neighbors: 5
-  - leaf_size: 10
-  - weights: distance
-- RandomForestClassifier
-  - criterion: log_loss
-  - max_depth: 3 
-  - max_features: log2
-  - n_estimators: 400
+- RidgeClassifier     : RidgeClassifier(alpha = 0.0001, solver = 'lsqr')
+- LinearSVC           : LinearSVC(C= 0.001,multi_class = 'crammer_singer',penalty = 'l2',loss='hinge')
+- SVC                 : SVC(C= 1.5, gamma = 'scale', kernel = 'rbf', random_state = 0)
+- LogisticRegression  : LogisticRegression(C= 1, max_iter= 100,solver = 'sag', penalty = 'l2')
+- KNeighborsClassifier: KNeighborsClassifier(n_neighbors=5, leaf_size = 10, weights='distance')
+- RandomForestClassifier: RandomForestClassifier(criterion= 'log_loss',  max_depth = 3, max_features = 'log2', n_estimators= 400)
+
+### 4.2 Multilayer Perceptron (MLP)
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
