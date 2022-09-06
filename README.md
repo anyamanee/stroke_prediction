@@ -48,6 +48,59 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
 
 ## 3. Network architecture
+Total params: 179,201<br>
+Trainable params: 179,201<br>
+Non-trainable params: 0<br>
+<table>
+  <tr>
+    <th>Layer (type)</th>
+    <th>Output Shape</th>
+    <th>Number of Parameter</th>
+    <th>Activation function</th>
+  </tr>
+  <tr>
+    <td>hidden1 (Dense)</td>
+    <td>(None, 512)</td>
+    <td>4,608</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>hidden1 (Dense)</td>
+    <td>(None, 512)</td>
+    <td>4608</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>hidden2 (Dense)</td>
+    <td>(None, 256)</td>
+    <td>131,328</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>hidden3 (Dense)</td>
+    <td>(None, 128)</td>
+    <td>32,896</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>hidden4 (Dense)</td>
+    <td>(None, 64)</td>
+    <td>8,256</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>hidden5 (Dense)</td>
+    <td>(None, 32)</td>
+    <td>2,080</td>
+    <td>sigmoid</td>
+  </tr>
+  <tr>
+    <td>output (Dense)</td>
+    <td>(None, 1)</td>
+    <td>33</td>
+    <td>sigmoid</td>
+  </tr>
+</table>
 
 ## 4. Training
 
@@ -106,8 +159,7 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
 </table>
 
 **`Multilayer Perceptron (MLP)`**<br>
-Mean±SD of Accuracy = ( , )
-
+Mean±SD of Accuracy = ( , )<br>
 <table>
   <tr>
     <th>Round</th>
