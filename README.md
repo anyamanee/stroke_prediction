@@ -1,4 +1,6 @@
-## _Group name (Group2)_
+##  <font color="#8450B2">_Group name (Group2)_</font> <br>
+## <style="color:red">_Group name (Group2)_
+## <p style="color:blue">This is another paragraph.</p>
 Deep Learning เป็นการเรียนรู้เชิงลึกที่เลียนแบบการทำงานของโครงข่ายประสาทของมนุษย์ โดยมีการทำงานซ้อนกันหลายๆ ชั้นหรือเรียกว่า Layer จากข้อมูลตัวอย่างเพื่อหา Pattern ของข้อมูล 
 โดยการศึกษาในครั้งนี้มีจุดมุ่งหมายเพื่อเปรียบเทียบประสิทธิภาพของ **`Traditional Machine Learning (ML)`** และ **`Multilayer Perceptron (MLP)`** รวมถึงการปรับ Hyperparameter เพื่อความสมบูรณ์ของโมเดล ทางทีมคาดหวังว่าจะได้ประสบการณ์ในเรื่องนี้ และเป็นประโยชน์ต่อผู้ที่กำลังสนใจในเรียนนี้ 
 
@@ -142,6 +144,7 @@ Non-trainable params: 0<br>
     <td>0.737769</td>
     <td>0.722222</td>
     <td>0.133562</td>
+<<<<<<< HEAD
     <td>0.225434</td>
   </tr>
   <tr>
@@ -272,3 +275,6 @@ Non-trainable params: 0<br>
     <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion </td>
   </tr>
 </table>
+=======
+    <td>0.225
+>>>>>>> b401b3f7d55d65b05191ee82cb5d000a042aa387
