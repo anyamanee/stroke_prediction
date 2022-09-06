@@ -38,19 +38,120 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ### Data preparation
 การเตรียมข้อมูลก่อน train model เราทำการ drop ค่า outliner ออก หลังจากนั้นจึงจัดการข้อมูล Binary category และ Multicategory โดยใช้ **`One-Hot encoding`** เพื่อเปลี่ยนข้อมูลที่เก็บในลักษณะ categorical ให้อยู่ในรูป Binary values เนื่องจากการทำ Machine leaning นั้น ต้องการข้อมูลในรูปแบบตัวเลขเพื่อใช้ในการ train และ predict โดยแปลงค่าในคอลัมน์ gender, ever_married, work_type, residence_type และ smoking_status เพื่อให้อยู่ในรูปแบบดังกล่าว <br>
 
-และเนื่องจากข้อมูลของเรามีความ imbalance เราจึงเลือกใช้ **`SMOTE`** (synthetic minority over-sampling technique) ซึ่งเป็นเทคนิคที่ใช้ในการแก้ปัญหาการจำแนกข้อมูลที่ไม่สมดุลและทำการ normalize ค่าด้วย StandardScaler
+เนื่องจากข้อมูลของเรามีความ imbalance เราจึงเลือกใช้ **`SMOTE`** (synthetic minority over-sampling technique) ซึ่งเป็นเทคนิคที่ใช้ในการแก้ปัญหาการจำแนกข้อมูลที่ไม่สมดุลและทำการ normalize ค่าด้วย StandardScaler <br>
+
+และจากข้อมูลทั้งหมด 5,110 มีการแบ่ง Data splitting (train/val/test) ดังนี้<br>
+ML: Train 80% และ Test 20%<br>
+MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
+
 
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
-
-### Data splitting (train/val/test) 
-80:20
 
 ## 3. Network architecture
 
 ## 4. Training
 
 ## 5. Results
+**`Traditional Machine Learning (ML)`**
+<table>
+  <tr>
+    <th>Classification algorithm</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <td>RidgeClassifier</td>
+    <td>0.737769</td>
+    <td>0.722222</td>
+    <td>0.133562</td>
+    <td>0.225434</td>
+  </tr>
+  <tr>
+    <td>LinearSVC</td>
+    <td>0.723092</td>
+    <td>0.777778</td>
+    <td>0.134185</td>
+    <td>0.228883</td>
+  </tr>
+  <tr>
+    <td>SVC</td>
+    <td>0.752446</td>
+    <td>0.722222</td>
+    <td>0.140794</td>
+    <td>0.235650</td>
+  </tr>
+  <tr>
+    <td>LogisticRegression</td>
+    <td>0.758317</td>
+    <td>0.703704</td>
+    <td>0.141264</td>
+    <td>0.235294</td>
+  </tr>
+  <tr>
+    <td>KNeighborsClassifier</td>
+    <td>0.826810</td>
+    <td>0.407407</td>
+    <td>0.131737</td>
+    <td>0.199095</td>
+  </tr>
+  <tr>
+    <td>RandomForestClassifier</td>
+    <td>0.718200</td>
+    <td>0.759259</td>
+    <td>0.129747</td>
+    <td>0.221622</td>
+  </tr>
+</table>
 
+**`Multilayer Perceptron (MLP)`**<br>
+Mean±SD of Accuracy = ( , )
+
+<table>
+  <tr>
+    <th>Round</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  </table>
 
 ## 6. Experiment result and discussion
 สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
