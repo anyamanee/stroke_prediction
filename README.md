@@ -1,3 +1,7 @@
+## _Group name (Group2)_
+Deep Learning เป็นการเรียนรู้เชิงลึกที่เลียนแบบการทำงานของโครงข่ายประสาทของมนุษย์ โดยมีการทำงานซ้อนกันหลายๆ ชั้นหรือเรียกว่า Layer จากข้อมูลตัวอย่างเพื่อหา Pattern ของข้อมูล 
+โดยการทดลองนี้มีจุดมุ่งหมายเพื่อเปรียบเทียบประสิทธิภาพของ Traditional Machine Learning (ML) and Multilayer Perceptron (MLP)
+
 ## 1. Dataset 
 
 **Dataset descrption:** Stroke Prediction Dataset (Ref: [Stroke Prediction Dataset | Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset))<br>
