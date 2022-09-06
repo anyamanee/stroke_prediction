@@ -50,6 +50,57 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ## 4. Training
 
 ## 5. Results
+<table>
+  <tr>
+    <th>Classification algorithmy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <td>RidgeClassifier</td>
+    <td>0.737769</td>
+    <td>0.722222</td>
+    <td>0.133562</td>
+    <td>0.225434</td>
+  </tr>
+  <tr>
+    <td>LinearSVC</td>
+    <td>0.723092</td>
+    <td>0.777778</td>
+    <td>0.134185</td>
+    <td>0.228883</td>
+  </tr>
+  <tr>
+    <td>SVC</td>
+    <td>0.752446</td>
+    <td>0.722222</td>
+    <td>0.140794</td>
+    <td>0.235650</td>
+  </tr>
+  <tr>
+    <td>LogisticRegression</td>
+    <td>0.758317</td>
+    <td>0.703704</td>
+    <td>0.141264</td>
+    <td>0.235294</td>
+  </tr>
+  <tr>
+    <td>KNeighborsClassifier</td>
+    <td>0.826810</td>
+    <td>0.407407</td>
+    <td>0.131737</td>
+    <td>0.199095</td>
+  </tr>
+  <tr>
+    <td>RandomForestClassifier</td>
+    <td>0.718200</td>
+    <td>0.759259</td>
+    <td>0.129747</td>
+    <td>0.221622</td>
+  </tr>
+</table>
 
 
 ## 6. Experiment result and discussion
