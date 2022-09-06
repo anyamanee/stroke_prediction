@@ -250,24 +250,24 @@ Non-trainable params: 0<br>
     <td>25%</td>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
+    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
   </tr>
   <tr>
     <td>25%</td>
     <td>6410422015</td>
     <td>Khodchapan Vitheethum</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
+    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
   </tr>
   <tr>
     <td>25%</td>
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion</td>
+    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
   </tr>
   <tr>
     <td>25%</td>
     <td>6410422031</td>
     <td>Anyamanee Pornpanvattana</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Report, Conclusion </td>
+    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion </td>
   </tr>
 </table>
