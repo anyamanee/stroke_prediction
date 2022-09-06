@@ -227,7 +227,7 @@ Non-trainable params: 0<br>
   <tr>
     <td>6410422005</td>
     <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP, Conclusion)</td>
+    <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP), Conclusion</td>
   </tr>
   <tr>
     <td>6410422015</td>
