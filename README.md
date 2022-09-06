@@ -102,7 +102,9 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
     <td>0.221622</td>
   </tr>
 </table>
+
 **`Multilayer Perceptron (MLP)`**
+
 <table>
   <tr>
     <th>Round</th>
