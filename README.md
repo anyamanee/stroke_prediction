@@ -229,7 +229,7 @@ Mean±SD of Accuracy = ( , )<br>
     <td>Khodchapan Vitheethum</td>
     <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
   </tr>
-  <tr>
+  <tr> 
     <td>6410422017</td>
     <td>Peerat Pookpanich</td>
     <td>Prepare datase, Data cleaning, EDA, Traditional Machine Learning (ML), Multilayer Perceptron (MLP)</td>
