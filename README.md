@@ -30,10 +30,10 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 11) smoking_status: "formerly smoked", "never smoked", "smokes" หรือ "Unknown"*  
 *Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
 
-
-
 ### EDA
-
+- XX
+- XX
+- XX
 
 ### Data preparation
 การเตรียมข้อมูลก่อน train model เราทำการ drop ค่า outliner ออก หลังจากนั้นจึงจัดการข้อมูล Binary category และ Multicategory โดยใช้ **`One-Hot encoding`** เพื่อเปลี่ยนข้อมูลที่เก็บในลักษณะ categorical ให้อยู่ในรูป Binary values เนื่องจากการทำ Machine leaning นั้น ต้องการข้อมูลในรูปแบบตัวเลขเพื่อใช้ในการ train และ predict โดยแปลงค่าในคอลัมน์ gender, ever_married, work_type, residence_type และ smoking_status เพื่อให้อยู่ในรูปแบบดังกล่าว <br>
@@ -42,11 +42,8 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
 
-### Data pre-processing
-
-### Data postprocessing
-
 ### Data splitting (train/val/test) 
+80:20
 
 ## 3. Network architecture
 
@@ -55,22 +52,15 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 ## 5. Results
 
 
-## 3. Experiment result and discussion
+## 6. Experiment result and discussion
 สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น <br>
 
 สำหรับการ normalization เราใช้ min-max normalization
 
 
-## 4. Conclusion
+## 7. Conclusion
 
-
-### Pros and Cons
-- เปรียบเทียบข้อดีข้อเสียของการใช้ ML และ MLP
-
-## 5. Recommendation
-
-
-
+## 8. Recommendation
 
 ## _End Credit_
 <table>
