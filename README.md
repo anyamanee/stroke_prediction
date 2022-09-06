@@ -174,7 +174,7 @@ Non-trainable params: 0<br>
 
 ### 5.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น โดยเราทำการเทรนโมเดลด้วย initial random weights ที่แตกต่างกัน 5 รอบ ได้ผลตามตารางดังนี้ <br>
-Mean±SD of Accuracy = ( , )<br>
+**`Mean±SD of Accuracy = ( , )`**<br>
 <table>
   <tr>
     <th>Round</th>
