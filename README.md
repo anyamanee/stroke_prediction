@@ -6,8 +6,10 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
 - 
 - XX
+
+
 | AAA | BBB|
-------|------
+|------|----|
 |123 | 345 |
 
 ## 1. Introduction
