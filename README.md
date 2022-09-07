@@ -75,7 +75,13 @@ Non-trainable params: 0<br>
   <tr>
     <td>hidden2 (Dense)</td>
     <td>(None, 64)</td>
-    <td> 4,160</td>
+    <td>4,160</td>
+    <td>relu</td>
+  </tr>
+    <tr>
+    <td>output (Dense)</td>
+    <td>(None, 1)</td>
+    <td>65</td>
     <td>relu</td>
   </tr>
 </table>
