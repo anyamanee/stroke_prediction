@@ -68,45 +68,15 @@ Non-trainable params: 0<br>
   </tr>
   <tr>
     <td>hidden1 (Dense)</td>
-    <td>(None, 512)</td>
-    <td>4,608</td>
-    <td>sigmoid</td>
-  </tr>
-  <tr>
-    <td>hidden1 (Dense)</td>
-    <td>(None, 512)</td>
-    <td>4608</td>
-    <td>sigmoid</td>
+    <td>(None, 64)</td>
+    <td>576</td>
+    <td>relu</td>
   </tr>
   <tr>
     <td>hidden2 (Dense)</td>
-    <td>(None, 256)</td>
-    <td>131,328</td>
-    <td>sigmoid</td>
-  </tr>
-  <tr>
-    <td>hidden3 (Dense)</td>
-    <td>(None, 128)</td>
-    <td>32,896</td>
-    <td>sigmoid</td>
-  </tr>
-  <tr>
-    <td>hidden4 (Dense)</td>
     <td>(None, 64)</td>
-    <td>8,256</td>
-    <td>sigmoid</td>
-  </tr>
-  <tr>
-    <td>hidden5 (Dense)</td>
-    <td>(None, 32)</td>
-    <td>2,080</td>
-    <td>sigmoid</td>
-  </tr>
-  <tr>
-    <td>output (Dense)</td>
-    <td>(None, 1)</td>
-    <td>33</td>
-    <td>sigmoid</td>
+    <td> 4,160</td>
+    <td>relu</td>
   </tr>
 </table>
 
