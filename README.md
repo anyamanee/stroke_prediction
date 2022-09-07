@@ -283,5 +283,4 @@ Non-trainable params: 0<br>
     <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion </td>
   </tr>
 </table>
-=======
-    <td>0.225
+
