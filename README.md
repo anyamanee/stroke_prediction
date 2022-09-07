@@ -62,9 +62,7 @@ Non-trainable params: 0<br>
 |Layer (type)|Output Shape|Number of Parameter|Activation function|
 |------------|------------|-------------------|-------------------|
 |hidden1 (Dense)|	(None, 64)|	576|	relu|
-|------------|------------|-------------------|-------------------|
 |hidden2 (Dense)|	(None, 64)|	4,160|	relu|
-|------------|------------|-------------------|-------------------|
 |output (Dense)|	(None, 1)|	65|	relu|
 
 <table>
