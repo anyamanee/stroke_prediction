@@ -56,8 +56,8 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
 
 ## 3. Network architecture
-Total params: 179,201<br>
-Trainable params: 179,201<br>
+Total params: 4,801<br>
+Trainable params: 4,801<br>
 Non-trainable params: 0<br>
 <table>
   <tr>
