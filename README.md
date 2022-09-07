@@ -247,10 +247,9 @@ Non-trainable params: 0<br>
 
 
 ## 7. Conclusion
-- ผลจากการเทรน traditional ML และ MLP ใน dataset นี้ พบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 
-จากผลที่ได้จาก final model และ traditional ML model จะเห็นได้ว่าค่า Accuracy ที่ได้จาก final model นั้นต่ำกว่าผลที่ได้จาก knn model และผลที่ได้ระหว่างจากทดลองปรับเปลี่ยน hyperparameter ในบางรอบ
+- การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
+- ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
 
-จึงสามารถสรุปได้ว่าการทดลองปรับ hyperparameter ด้วยการแยก hyperparameter แต่ล่ะตัวให้สมาชิกแต่ล่ะคนไปทดลองเพื่อหาค่าที่ได้ผลดีที่สุด แล้วนำค่าที่ได้นั้นมารวมกันเป็น model ไม่ได้ทำให้ได้ผลลัพธ์ที่ดีที่สุด ดังนั้นการปรับจูน hyperparameters ควรจะค่อยๆปรับค่าทั้งหมดไปพร้อมกันมากกว่า
 
 ## 8. Recommendation
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่ (เท่าไหร่คือใหญ่?) ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น (???)
