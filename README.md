@@ -94,6 +94,14 @@ Non-trainable params: 0<br>
 ### 5.1 Traditional Machine Learning (ML)
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
+|------------------------|----------|----------|----------|--|
+|RandomForest	|0.877691|	0.222222|	0.126316|	0.161074|
+|KNN|	0.826810	|0.407407|	0.131737|	0.199095|
+|XGBClassifier	|0.763209|	0.574074|	0.124000|	0.203947|
+|LogisticRegression	|0.758317|	0.703704|	0.141264|	0.235294|
+|SVC|	0.752446	|0.722222|	0.140794|	0.235650|
+|RidgeClassifier	|0.737769|	0.722222|	0.133562|	0.225434|
+|LinearSVC	|0.723092|	0.777778|	0.134185|	0.228883|
 
 <table>
   <tr>
