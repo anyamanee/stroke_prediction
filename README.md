@@ -202,10 +202,10 @@ Non-trainable params: 0<br>
   </tr>
   <tr>
     <td>RandomForestClassifier</td>
-    <td>0.718200</td>
-    <td>0.759259</td>
-    <td>0.129747</td>
-    <td>0.221622</td>
+    <td>0.882583</td>
+    <td>0.259259</td>
+    <td>0.148936</td>
+    <td>0.189189</td>
   </tr>
 </table>
 
