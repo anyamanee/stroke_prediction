@@ -124,7 +124,26 @@ Non-trainable params: 0<br>
 - RandomForestClassifier: RandomForestClassifier(criterion= 'log_loss',  max_depth = 3, max_features = 'log2', n_estimators= 400)
 
 ### 4.2 Multilayer Perceptron (MLP)
-ในการเทรนโมเดล Multilayer Perceptron (MLP) เราเลือกใช้ The Keras ecosystem (KerasTuner) โดยจะ trial-and-error ในการปรับหา Hyperparamet เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น
+ในการเทรนโมเดล Multilayer Perceptron (MLP) เราเลือกใช้ The Keras ecosystem (KerasTuner) โดยจะ trial-and-error ในการปรับหา Hyperparamet เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น<br>
+โดยรายละเอียดของข้อมูลในการ trial-and-error มีดังนี้
+<table>
+  <tr>
+    <th>Hyperparameter</th>
+    <th>List of value</th>
+  </tr>
+  <tr>
+    <td>Number of layer</td>
+    <td>[1,2,3]</td>
+  </tr>
+  <tr>
+    <td>Number of node</td>
+    <td>[8, 32, 64, 128, 512, 1024]</td>
+  </tr>
+  <tr>
+    <td>Learning rate</td>
+    <td>[0.01, 0.001, 0.0001, 0.00001]</td>
+  </tr>
+</table>
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
@@ -142,7 +161,6 @@ Non-trainable params: 0<br>
     <td>0.737769</td>
     <td>0.722222</td>
     <td>0.133562</td>
-<<<<<<< HEAD
     <td>0.225434</td>
   </tr>
   <tr>
@@ -184,7 +202,8 @@ Non-trainable params: 0<br>
 
 
 ### 5.2 Multilayer Perceptron (MLP)
-**`Mean±SD of Accuracy = ( , )`**<br>
+**`Mean±SD of Accuracy = ( , )`**
+
 <table>
   <tr>
     <th>Round</th>
