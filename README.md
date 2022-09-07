@@ -65,33 +65,6 @@ Non-trainable params: 0<br>
 |hidden2 (Dense)|	(None, 64)|	4,160|	relu|
 |output (Dense)|	(None, 1)|	65|	relu|
 
-<table>
-  <tr>
-    <th>Layer (type)</th>
-    <th>Output Shape</th>
-    <th>Number of Parameter</th>
-    <th>Activation function</th>
-  </tr>
-  <tr>
-    <td>hidden1 (Dense)</td>
-    <td>(None, 64)</td>
-    <td>576</td>
-    <td>relu</td>
-  </tr>
-  <tr>
-    <td>hidden2 (Dense)</td>
-    <td>(None, 64)</td>
-    <td>4,160</td>
-    <td>relu</td>
-  </tr>
-    <tr>
-    <td>output (Dense)</td>
-    <td>(None, 1)</td>
-    <td>65</td>
-    <td>relu</td>
-  </tr>
-</table>
-
 ## 4. Training
 ### 4.1 Traditional Machine Learning (ML)
 เราใช้ Scikit-learn ซึ่งเป็น library ใน Python ในการเทรนโมเดลแบบ Traditional Machine Learning ซึ่งประกอบไปด้วย **`RidgeClassifier`**, **`LinearSVC`**, **`SVC`**, **`LogisticRegression`**, **`KNeighborsClassifier`** และ **`RandomForestClassifier`** <br>
@@ -108,36 +81,19 @@ Non-trainable params: 0<br>
 ### 4.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล Multilayer Perceptron (MLP) เราเลือกใช้ The Keras ecosystem (KerasTuner) โดยจะ trial-and-error ในการปรับหา Hyperparamet เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น<br>
 โดยรายละเอียดของข้อมูลในการ trial-and-error มีดังนี้
-<table>
-  <tr>
-    <th>Hyperparameter</th>
-    <th>List of value</th>
-    <th>Best value for dataset</th>
-  </tr>
-  <tr>
-    <td>Number of layer</td>
-    <td>[1,2,3]</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>Number of node</td>
-    <td>[8, 32, 64, 128, 512, 1024]</td>
-    <td>[ ]</td>
-  </tr>
-  <tr>
-    <td>Learning rate</td>
-    <td>[0.01, 0.001, 0.0001, 0.00001]</td>
-    <td>0.001</td>
-  </tr>
-  <tr>
-    <td>Activation</td>
-    <td>[relu, tanh, sigmoid]</td>
-    <td>relu</td>
-  </tr>
-</table>
+
+|Hyperparameter	|List of value	|Best value for dataset|
+|---------------|---------------|----------------------|
+|Number of layer|[1,2,3]       	|3|
+|Number of node	|[8, 32, 64, 128, 512, 1024]	|[ ]|
+|Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
+|Activation	    |[relu, tanh, sigmoid]	|relu|
+
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
+
+|Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
 
 <table>
   <tr>
@@ -195,50 +151,14 @@ Non-trainable params: 0<br>
 ### 5.2 Multilayer Perceptron (MLP)
 **`Mean±SD of Accuracy = ( , )`**
 
-<table>
-  <tr>
-    <th>Round</th>
-    <th>Accuracy</th>
-    <th>Precision</th>
-    <th>Recall</th>
-    <th>F1</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  </table>
+|Round|	Accuracy|	Precision|	Recall|	F1|
+|-----|---------|----------|--------|---|
+|1    |	0	      |   0      |	0     |	0 |
+|2	  |0        |	0        |	0     |	0 |
+|3	  |0        |	0        |	0     |	0 |
+|4	  |0	      |0         |	0	    |0  |
+|5	  |0        |	0	       |0	      |0  |
+
 
 ## 6. Experiment result and discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
