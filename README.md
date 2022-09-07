@@ -124,7 +124,7 @@ Non-trainable params: 0<br>
 - RandomForestClassifier: RandomForestClassifier(criterion= 'log_loss',  max_depth = 3, max_features = 'log2', n_estimators= 400)
 
 ### 4.2 Multilayer Perceptron (MLP)
-ในการเทรนโมเดล  Multilayer Perceptron (MLP) เราใช้วิธี trial-and-error เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น โดยเราทำการเทรนโมเดลด้วย initial random weights ที่แตกต่างกัน 5 รอบ
+ในการเทรนโมเดล Multilayer Perceptron (MLP) เราเลือกใช้ The Keras ecosystem (KerasTuner) โดยจะ trial-and-error ในการปรับหา Hyperparamet เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น
 
 ## 5. Results
 ### 5.1 Traditional Machine Learning (ML)
