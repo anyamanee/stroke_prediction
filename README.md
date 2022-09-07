@@ -76,6 +76,7 @@ Non-trainable params: 0<br>
 - SVC                 : SVC(C= 1.5, gamma = 'scale', kernel = 'rbf', random_state = 0)
 - LogisticRegression  : LogisticRegression(C= 1, max_iter= 100,solver = 'sag', penalty = 'l2')
 - KNeighborsClassifier: KNeighborsClassifier(n_neighbors=5, leaf_size = 10, weights='distance')
+- Xgboost             : XGBClassifier(eval_metric= 'error', learning_rate=0.1)
 - RandomForestClassifier: RandomForestClassifier(criterion= 'log_loss',  max_depth = 3, max_features = 'log2', n_estimators= 400)
 
 ### 4.2 Multilayer Perceptron (MLP)
