@@ -4,7 +4,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 
 ## _Key Highlight_
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
-- XX
+- ReLU M
 - XX
 
 ## 1. Introduction
@@ -103,58 +103,6 @@ Non-trainable params: 0<br>
 |RidgeClassifier	|0.737769|	0.722222|	0.133562|	0.225434|
 |LinearSVC	|0.723092|	0.777778|	0.134185|	0.228883|
 
-<table>
-  <tr>
-    <th>Classification algorithm</th>
-    <th>Accuracy</th>
-    <th>Precision</th>
-    <th>Recall</th>
-    <th>F1</th>
-  </tr>
-  <tr>
-    <td>RidgeClassifier</td>
-    <td>0.737769</td>
-    <td>0.722222</td>
-    <td>0.133562</td>
-    <td>0.225434</td>
-  </tr>
-  <tr>
-    <td>LinearSVC</td>
-    <td>0.723092</td>
-    <td>0.777778</td>
-    <td>0.134185</td>
-    <td>0.228883</td>
-  </tr>
-  <tr>
-    <td>SVC</td>
-    <td>0.752446</td>
-    <td>0.722222</td>
-    <td>0.140794</td>
-    <td>0.235650</td>
-  </tr>
-  <tr>
-    <td>LogisticRegression</td>
-    <td>0.758317</td>
-    <td>0.703704</td>
-    <td>0.141264</td>
-    <td>0.235294</td>
-  </tr>
-  <tr>
-    <td>KNeighborsClassifier</td>
-    <td>0.826810</td>
-    <td>0.407407</td>
-    <td>0.131737</td>
-    <td>0.199095</td>
-  </tr>
-  <tr>
-    <td>RandomForestClassifier</td>
-    <td>0.882583</td>
-    <td>0.259259</td>
-    <td>0.148936</td>
-    <td>0.189189</td>
-  </tr>
-</table>
-
 
 ### 5.2 Multilayer Perceptron (MLP)
 **`Mean±SD of Accuracy = ( , )`**
@@ -185,9 +133,9 @@ Non-trainable params: 0<br>
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
 
 ## 8. Recommendation
-- การปรับ
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่ (เท่าไหร่คือใหญ่?) ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น (???)
 - สำหรับ Dataset ขนาดเล็ก การใช้ traditional ML ในการพยากรณ์ข้อมูลนั้นเหมาะสมกว่าการใช้ MLP เพราะใช้ทรัพยากรในการ train model น้อยกว่า
+- การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
 
 
 ## _End Credit_
