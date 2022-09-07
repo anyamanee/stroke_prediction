@@ -130,18 +130,27 @@ Non-trainable params: 0<br>
   <tr>
     <th>Hyperparameter</th>
     <th>List of value</th>
+    <th>Best value for Keras</th>
   </tr>
   <tr>
     <td>Number of layer</td>
     <td>[1,2,3]</td>
+    <td>[3]</td>
   </tr>
   <tr>
     <td>Number of node</td>
     <td>[8, 32, 64, 128, 512, 1024]</td>
+    <td>[ ]</td>
   </tr>
   <tr>
     <td>Learning rate</td>
     <td>[0.01, 0.001, 0.0001, 0.00001]</td>
+    <td>[0.001]</td>
+  </tr>
+  <tr>
+    <td>Activation</td>
+    <td>[relu, tanh, sigmoid]</td>
+    <td>[relu]</td>
   </tr>
 </table>
 
