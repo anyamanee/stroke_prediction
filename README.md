@@ -90,6 +90,8 @@ Non-trainable params: 0<br>
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
 |Activation	    |[relu, tanh, sigmoid]	|relu|
 
+ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
+เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที
 
 ## 5. Results
 โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์ที่ได้จาก test set ทั้ง 2 ตาราง
