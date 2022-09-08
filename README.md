@@ -133,10 +133,10 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
 - การ normalization เราใช้ StandardScaler เนื่องจากข้อมูลในแต่ละ Features มีการแจกแจงปกติอยู่แล้ว
 
 - ข้อมูลในเรื่อง Stroke Prediction มีความ imbalance เราจึงเลือกใช้ SMOTE (synthetic minority over-sampling technique)  จัดการกับข้อมูลในชุดนี้ก่อนจะนำไปใช้สร้าง Model จริง<br>
-ในข้อมูล Train Set มีเพียง 195 instances เท่านั้นที่เป็น calss1 (หากผู้ป่วยเป็นโรคหลอดเลือดสมอง) แต่ในขณะที่ class0 (หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) มีถึง 3,892 instances<br>
-จากเหตุผลด้านบนทำให้ Model ไม่สามารถหา Pattern ที่แน่นอนของ class1 ได้ดีนัก ส่งผลให้ค่า Accuracy, Precision, Recall, F1 ของ calss1 น้อยตามไปด้วย
+ในข้อมูล Train Set มีเพียง 195 instances เท่านั้นที่เป็น class1 (หากผู้ป่วยเป็นโรคหลอดเลือดสมอง) แต่ในขณะที่ class0 (หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) มีถึง 3,892 instances<br>
+จากเหตุผลด้านบนทำให้ Model ไม่สามารถหา Pattern ที่แน่นอนของ class1 ได้ดีนัก ส่งผลให้ค่า Accuracy, Precision, Recall, F1 ของ class1 น้อยตามไปด้วย
 
-- Traditional Machine Learning (ML) ไม่จำเป็นต้องมีการ tuning hyperpsrsmeter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อยกว่า Multilayer Perceptron (MLP) 
+- Traditional Machine Learning (ML) ไม่จำเป็นต้องมีการ tuning hyperparameter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อยกว่า Multilayer Perceptron (MLP) 
 
 
 ## 7. Discussion
