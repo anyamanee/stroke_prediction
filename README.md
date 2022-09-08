@@ -127,24 +127,14 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
   <PIC>
 
 
-## 6. Experiment result and discussion
+## 6.Discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
-
 - การ normalization เราใช้ StandardScaler เนื่องจากข้อมูลในแต่ละ Features มีการแจกแจงปกติอยู่แล้ว
-
 - ข้อมูลในเรื่อง Stroke Prediction มีความ imbalance เราจึงเลือกใช้ SMOTE (synthetic minority over-sampling technique)  จัดการกับข้อมูลในชุดนี้ก่อนจะนำไปใช้สร้าง Model จริง<br>
 ในข้อมูล Train Set มีเพียง 195 instances เท่านั้นที่เป็น class1 (หากผู้ป่วยเป็นโรคหลอดเลือดสมอง) แต่ในขณะที่ class0 (หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) มีถึง 3,892 instances<br>
 จากเหตุผลด้านบนทำให้ Model ไม่สามารถหา Pattern ที่แน่นอนของ class1 ได้ดีนัก ส่งผลให้ค่า Accuracy, Precision, Recall, F1 ของ class1 น้อยตามไปด้วย
-
-- Traditional Machine Learning (ML) ไม่จำเป็นต้องมีการ tuning hyperparameter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อยกว่า Multilayer Perceptron (MLP) 
-
-
-## 7. Discussion
 - การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
-- สำหรับ Dataset ขนาดเล็ก การใช้ traditional ML ในการพยากรณ์ข้อมูลนั้นเหมาะสมกว่าการใช้ MLP เพราะใช้ทรัพยากรในการ train model น้อยกว่า
-- การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
-- สิ่งที่ไม่ตรงตามสมมติฐาน
-   
+  
 
 ## 8. Conclusion
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
