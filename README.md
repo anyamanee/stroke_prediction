@@ -136,7 +136,7 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
 - การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
   
 
-## 8. Conclusion
+## 7. Conclusion
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
     
@@ -147,7 +147,7 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
 |3. PrecisionRecall     |0| | | | |
 |4. F1 Score            | | | | | |
 
-## 9. References
+## 8. References
 - เทคนิคการเขียนโค้ดด้วยวิธี automl ของ The Keras ecosystem: <br>
     **Authors:** Luca Invernizzi, James Long, Francois Chollet, Tom O'Malley, Haifeng Jin <br>
     **Last modified:** 2021/10/27 <br>
