@@ -120,7 +120,7 @@ Non-trainable params: 0<br>
 |4	  |0	      |0         |	0	    |0  |
 |5	  |0        |	0	       |0	      |0  |
 
-MEAN: XXX
+MEAN: XXX <br>
 SD: XXX
 
 โดย ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
