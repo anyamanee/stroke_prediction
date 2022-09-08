@@ -117,12 +117,14 @@ Non-trainable params: 0<br>
 - CPU: AMD Ryzen 7 4700U with Radeon Graphics
   - visual studio: 6m
   - colab: 11m
--  GPU No. 11 จำนวน 1 ตัว
-  - colab: 15m
-และ
-- CPU: HP ZBook Firefly 14 inch G8 Mobile Workstation PC
-Processor    11th Gen Intel(R) Core(TM) i7-1185G7
+- GPU No. 11 จำนวน 1 ตัว
+  - colab: 15m<br>
 
+และ<br>
+- CPU: HP ZBook Firefly 14 inch G8 Mobile Workstation PC
+Processor    11th Gen Intel(R) Core(TM) i7-1185G7<br>
+
+ได้ค่า Mean และ SD ดังนี้ <br>
 |round|Accuracy|	Precision|	Recall	|F1|
 |-----|--------|-----------|----------|--|
 |1    |0.849315 |0.462963     |0.166667 |0.245098|
@@ -131,10 +133,10 @@ Processor    11th Gen Intel(R) Core(TM) i7-1185G7
 |4    |0.875734  |0.462963     |0.203252 |0.282486|
 |5    |0.859100  |0.462963     |0.178571 |0.257732|
 
-ได้ค่า Mean และ SD ดังนี้ <br>
-Mean Accuracy of Test set: 0.8577299412915853<br>
-STD: 0.010709705121340223 <br>
-Mean±SD of Accuracy = ( 0.8684396464129255 , 0.8470202361702451 )
+
+**Mean Accuracy of Test set:** 0.8577299412915853<br>
+**STD:** 0.010709705121340223 <br>
+**Mean±SD of Accuracy** = ( 0.8684396464129255 , 0.8470202361702451 )
 
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
 ![image](https://user-images.githubusercontent.com/101736826/189178365-9b99fe9e-53bf-44fb-9ac9-915cee66bf19.png)
