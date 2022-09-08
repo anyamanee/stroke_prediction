@@ -109,10 +109,9 @@ Non-trainable params: 0<br>
 
 
 ### 5.2 Multilayer Perceptron (MLP)
-**`Mean±SD of Accuracy = ( , )`**<br>
 โดยค่าเฉลี่ยของ Accuracy ด้านบนนั้น มากจากการคำนวณค่าเฉลี่ยของ Accuracy ในการเทรนโมเดลลด้วย initial random weights ที่แตกต่างกัน 5 รอบ <br>
 ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
-เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที และบน CPU ใช้เวลาในการเทรนโดยประมาณ 6m 54.2s ได้ค่า mean และ SD ดังนี้ <br><br>
+เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที และบน CPU ใช้เวลาในการเทรนโดยประมาณ 6m 54.2s ได้ค่า mean และ SD ดังนี้ <br>
 
 Mean = 0.8288283658787255 <br>
 SD = 0.021048992024207288 <br>
@@ -171,6 +170,9 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
     **Authors:** OHM-Songpol, nuijth, robinoud, MartRideratGamaGama <br>
     **Last modified:** 2022/02/07 <br>
     **Link:** https://github.com/robinoud/BADS7604_HW3_Deep-Learning
+ 
+ - API Keras  ของ Tensorflow Libary
+    **Link:** https://www.tensorflow.org/api_docs/python/tf
  
  
 
