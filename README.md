@@ -89,7 +89,7 @@ Non-trainable params: 0<br>
 |Number of node	|[8, 32, 64, 128, 512, 1024]	|[ ]|
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
 |Activation	    |[relu, tanh, sigmoid]	|relu|
-
+|Oprimizer      |    -          | ExponentialDecay|
 
 
 ## 5. Results
@@ -165,7 +165,7 @@ SD: XXX
 - เทคนิคการปรับโมเดล: <br>
     **Authors:** SIDDHESH SAWANT <br>
     **Last modified:** 2021/03/26 <br>
-    **Link:** https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/comments <br><br>
+    **Link:** https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/comments <br>
 
     **Authors:** OHM-Songpol, nuijth, robinoud, MartRideratGamaGama <br>
     **Last modified:** 2022/02/07 <br>
