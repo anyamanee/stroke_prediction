@@ -4,7 +4,8 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 
 ## _Key Highlight_
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
-- ReLU M
+- 
+- ตอนแรกใช้ ativation function เป็น relu แต่รันไม่ผ่าน เลยไปศึกษาเจอว่าใน backprop การทำค่า grad ของ relu มีโอกาส patial derivertive เป็น 0 ได้เนื่องจากข้อมูลที่สุ่มมาในแต่ละ batcht มีค่า 0 ทั้งหมด ทำให้หาค่า backpro หาค่า grad ไม่มได้และเกิด error ขึ้น
 - XX
 
 ## 1. Introduction
@@ -91,7 +92,9 @@ Non-trainable params: 0<br>
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay <br>(itial_learning_rate=1e-2, <br> decay_steps=10000, <br> decay_rate=0.9)|
 |Activation	    |[relu, tanh, sigmoid]	|tanh, sigmoid|
 |Optimizer      |Adam          | Adam|
-
+|
+- ฺBatch size = 16
+- Epoch = 100
 
 ## 5. Results
 โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์ที่ได้จาก test set ทั้ง 2 ตาราง
@@ -159,6 +162,8 @@ Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
  
  - API Keras  ของ Tensorflow Libary <br>
     **Link:** https://www.tensorflow.org/api_docs/python/tf
+    
+ - การ
  
  
 
