@@ -87,7 +87,7 @@ Non-trainable params: 0<br>
 |Hyperparameter	|List of value	|Best value for dataset|
 |---------------|---------------|----------------------|
 |Number of layer|[1,2,3]       	|3|
-|Number of node	|[21, 22, ..., 100]	|3|
+|Number of node	|[21, 22, ..., 100]	|89, 72|
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay <br>(itial_learning_rate=1e-2, <br> decay_steps=10000, <br> decay_rate=0.9)|
 |Activation	    |[relu, tanh, sigmoid]	|tanh, sigmoid|
 |Oprimizer      |Adam          | Adam|
