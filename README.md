@@ -171,7 +171,7 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
     **Last modified:** 2022/02/07 <br>
     **Link:** https://github.com/robinoud/BADS7604_HW3_Deep-Learning
  
- - API Keras  ของ Tensorflow Libary
+ - API Keras  ของ Tensorflow Libary <br>
     **Link:** https://www.tensorflow.org/api_docs/python/tf
  
  
