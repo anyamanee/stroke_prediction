@@ -165,7 +165,11 @@ SD: XXX
 - เทคนิคการปรับโมเดล: <br>
     **Authors:** SIDDHESH SAWANT <br>
     **Last modified:** 2021/03/26 <br>
-    **Link:** https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/comments
+    **Link:** https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/comments <br><br>
+
+    **Authors:** OHM-Songpol, nuijth, robinoud, MartRideratGamaGama <br>
+    **Last modified:** 2022/02/07 <br>
+    **Link:** https://github.com/robinoud/BADS7604_HW3_Deep-Learning
  
  
 
