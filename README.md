@@ -92,7 +92,7 @@ Non-trainable params: 0<br>
 
 
 ## 5. Results
-โดยผลลัพธ์ในตารางดังต่อไปนี้นเป็นผลลัพธ์บน test set
+โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์บน test set
 ### 5.1 Traditional Machine Learning (ML)
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
