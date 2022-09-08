@@ -4,8 +4,8 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 
 ## _Key Highlight_
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
+- เมื่อทดลองใช้ activation fuction เป็น ReLU แต่เกิดปัญหา 
 - 
-- ตอนแรกใช้ ativation function เป็น relu แต่รันไม่ผ่าน เลยไปศึกษาเจอว่าใน backprop การทำค่า grad ของ relu มีโอกาส patial derivertive เป็น 0 ได้เนื่องจากข้อมูลที่สุ่มมาในแต่ละ batcht มีค่า 0 ทั้งหมด ทำให้หาค่า backpro หาค่า grad ไม่มได้และเกิด error ขึ้น
 - XX
 
 ## 1. Introduction
