@@ -157,8 +157,10 @@ SD: XXX
 - การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
 
 ## 9. References
-- เทคนิคการเขียนงโค้ดด้วยวิธี automl ของ The Keras ecosystem:
-    **Authors:** Luca Invernizzi, James Long, Francois Chollet, Tom O'Malley, Haifeng Jin
+- เทคนิคการเขียนงโค้ดด้วยวิธี automl ของ The Keras ecosystem: <br>
+    **Authors:** Luca Invernizzi, James Long, Francois Chollet, Tom O'Malley, Haifeng Jin <br>
+    **Last modified:** 2021/10/27 <br>
+    **Link:** https://keras.io/guides/keras_tuner/getting_started/ <br>
     
 - เทคนิคการปรับโมเดล: SAWANT, S. (2021, March 26). Stroke: EDA + SMOTE + 9 Models (90% Accuracy). Retrieved from Kaggle: https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/notebook
 
