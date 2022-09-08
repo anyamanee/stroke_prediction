@@ -156,6 +156,12 @@ SD: XXX
 - สำหรับ Dataset ขนาดเล็ก การใช้ traditional ML ในการพยากรณ์ข้อมูลนั้นเหมาะสมกว่าการใช้ MLP เพราะใช้ทรัพยากรในการ train model น้อยกว่า
 - การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
 
+## 9. References
+- เทคนิคการเขียนงโค้ดด้วยวิธี automl ของ The Keras ecosystem
+- เทคนิคการปรับโมเดล: SAWANT, S. (2021, March 26). Stroke: EDA + SMOTE + 9 Models (90% Accuracy). Retrieved from Kaggle: https://www.kaggle.com/code/siddheshera/stroke-eda-smote-9-models-90-accuracy/notebook
+
+
+
 
 ## _End Credit_
 
