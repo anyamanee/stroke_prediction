@@ -119,7 +119,7 @@ Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
 
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
 ![image](https://user-images.githubusercontent.com/101736826/189178365-9b99fe9e-53bf-44fb-9ac9-915cee66bf19.png)
-<br> จากกราฟสังเกตได้ว่า ค่า accuracy และ loss ของ validation มีการขยับเข้าใกล้ค่า train set เมื่อมีการเทรนโมเดล XXX epoch แสดงให้เห็นว่าโมเดล goodfit
+<br> จากกราฟสังเกตได้ว่า ค่า accuracy และ loss ของ validation มีการขยับเข้าใกล้ค่า train set เมื่อมีการเทรนโมเดล 500 epoch แสดงให้เห็นว่าโมเดล goodfit
   
 
 ## 6.Discussion
