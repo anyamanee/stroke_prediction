@@ -56,8 +56,8 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
 
 ## 3. Network architecture
-Total params: 4,801<br>
-Trainable params: 4,801<br>
+Total params: 7,354<br>
+Trainable params: 7,354<br>
 Non-trainable params: 0<br>
 |Layer (type)|Output Shape|Number of Parameter|Activation function|
 |------------|------------|-------------------|-------------------|
@@ -90,7 +90,7 @@ Non-trainable params: 0<br>
 |Number of node	|[21, 22, ..., 100]	|[ ]|
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
 |Activation	    |[relu, tanh, sigmoid]	|relu|
-|Oprimizer      |    -          | ExponentialDecay|
+|Oprimizer      |ExponentialDecay, Adam          | ExponentialDecay|
 
 
 ## 5. Results
