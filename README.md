@@ -88,9 +88,9 @@ Non-trainable params: 0<br>
 |---------------|---------------|----------------------|
 |Number of layer|[1,2,3]       	|3|
 |Number of node	|[21, 22, ..., 100]	|[ ]|
-|Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay|
-|Activation	    |[relu, tanh, sigmoid]	|relu|
-|Oprimizer      |ExponentialDecay, Adam          | Adam|
+|Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay <br> itial_learning_rate=1e-2, <br> decay_steps=10000, <br> decay_rate=0.9|
+|Activation	    |[relu, tanh, sigmoid]	|tanh, sigmoid|
+|Oprimizer      |Adam          | Adam|
 
 
 ## 5. Results
