@@ -92,7 +92,7 @@ Non-trainable params: 0<br>
 
 
 ## 5. Results
-โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์mี่ได้จาก test set ทั้ง 2 ตาราง
+โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์ที่ได้จาก test set ทั้ง 2 ตาราง
 ### 5.1 Traditional Machine Learning (ML)
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
@@ -107,7 +107,7 @@ Non-trainable params: 0<br>
 
 
 ### 5.2 Multilayer Perceptron (MLP)
-**`Mean±SD of Accuracy = ( , )`**
+**`Mean±SD of Accuracy = ( , )`**<br>
 โดยค่าเฉลี่ยของ Accuracy ด้านบนนั้น มากจากการคำนวณค่าเฉลี่ยของ Accuracy ในการเทรนโมเดลลด้วย initial random weights ที่แตกต่างกัน 5 รอบ
 
 |Round|	Accuracy|	Precision|	Recall|	F1|
