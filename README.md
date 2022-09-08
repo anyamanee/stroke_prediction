@@ -78,7 +78,7 @@ Non-trainable params: 0<br>
 - LogisticRegression  : LogisticRegression(C= 1, max_iter= 100,solver = 'sag', penalty = 'l2')
 - KNeighborsClassifier: KNeighborsClassifier(n_neighbors=5, leaf_size = 10, weights='distance')
 - Xgboost             : XGBClassifier(eval_metric= 'error', learning_rate=0.1)
-- RandomForestClassifier: RandomForestClassifier(criterion= 'log_loss',  max_depth = 3, max_features = 'log2', n_estimators= 400)
+- RandomForestClassifier: RandomForestClassifier(criterion= 'gini', random_state = 0, n_estimators= 100)
 
 ### 4.2 Multilayer Perceptron (MLP)
 ในการเทรนโมเดล Multilayer Perceptron (MLP) เราเลือกใช้ The Keras ecosystem (KerasTuner) โดยจะ trial-and-error ในการปรับหา Hyperparamet เพื่อหาโมเดลที่ดีที่สุดเพื่อพยากรณ์การเป็นโรคหลอดเลือดสมองสำหรับ dataset ข้างต้น<br>
