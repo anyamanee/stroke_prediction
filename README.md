@@ -3,8 +3,8 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 โดยการศึกษาในครั้งนี้มีจุดมุ่งหมายเพื่อเปรียบเทียบประสิทธิภาพของ **`Traditional Machine Learning (ML)`** และ **`Multilayer Perceptron (MLP)`** รวมถึงการปรับ Hyperparameter เพื่อความสมบูรณ์ของโมเดล ทางทีมคาดหวังว่าจะได้ประสบการณ์ในเรื่องนี้ และเป็นประโยชน์ต่อผู้ที่กำลังสนใจในเรียนนี้ 
 
 ## _Key Highlight_
-- ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
-- เมื่อทดลองใช้ activation fuction ในส่วนของ output layer เป็น ReLU  เกิดปัญหา error ขึ้น แต่หากใช้ sigmoid จะไม่พบปัญหาดังกล่าว จากการศึกษาเพิ่มเติมพบว่่า ReLU ส่งผลต่อการทำ backpropagation เนื่องจากการสุ่มข้อมูลใน batch แต่ละครั้งอาจสุ่มเจอค่า 0 ทั้งหมด ทำให้ไม่สามารถคำนวนค่า backpropagation และ error ได้
+- ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.8826 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.8288 เท่านั้น
+- เมื่อทดลองใช้ activation fuction ในส่วนของ output layer เป็น ReLU  เกิดปัญหา error ขึ้น แต่หากใช้ sigmoid จะไม่พบปัญหาดังกล่าว จากการศึกษาเพิ่มเติมพบว่า ReLU ส่งผลต่อการทำ backpropagation เนื่องจากการสุ่มข้อมูลใน batch แต่ละครั้งอาจสุ่มเจอค่า 0 ทั้งหมด ทำให้ไม่สามารถคำนวนค่า backpropagation และ error ได้
 - resource ส่งผลต่อการเทรนโมเดลเป็นอย่างมาก อาทิ ความแรงของสัญญาณ Internet ก็เป็นหนึ่งสิ่งสำคัญเมื่อทำการรันด้วย GPU บน google colab โดยเฉพาะการเทรนโมเดล MLP ซึ่งต้องให้ทรัพยากรในการ tuning และปรับหา combination เพื่อให้ได้โมเดลที่ดีที่สุดออกมา 
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
 
@@ -102,7 +102,7 @@ Non-trainable params: 0<br>
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
 |------------------------|----------|----------|----------|--|
-|RandomForest	|0.877691|	0.222222|	0.126316|	0.161074|
+|RandomForest	|	0.882583|	0.259259|	0.148936|	0.189189|
 |KNN|	0.826810	|0.407407|	0.131737|	0.199095|
 |XGBClassifier	|0.763209|	0.574074|	0.124000|	0.203947|
 |LogisticRegression	|0.758317|	0.703704|	0.141264|	0.235294|
@@ -113,8 +113,16 @@ Non-trainable params: 0<br>
 
 ### 5.2 Multilayer Perceptron (MLP)
 โดยค่าเฉลี่ยของ Accuracy ด้านบนนั้น มากจากการคำนวณค่าเฉลี่ยของ Accuracy ในการเทรนโมเดลลด้วย initial random weights ที่แตกต่างกัน 5 รอบ <br>
-ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 11: Name = /physical_device:GPU:0 <br>
-เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที และบน CPU ใช้เวลาในการเทรนโดยประมาณ 6m 54.2s <br>
+ทำการเทรนโดยใช้ <br>
+- CPU: AMD Ryzen 7 4700U with Radeon Graphics
+  - visual studio: 6m
+  - colab: 11m
+-  GPU No. 11 จำนวน 1 ตัว
+  - colab: 15m
+และ
+- CPU: HP ZBook Firefly 14 inch G8 Mobile Workstation PC
+Processor    11th Gen Intel(R) Core(TM) i7-1185G7
+
 |round|Accuracy|	Precision|	Recall	|F1|
 |-----|--------|-----------|----------|--|
 |1    |0.849315 |0.462963     |0.166667 |0.245098|
@@ -123,10 +131,10 @@ Non-trainable params: 0<br>
 |4    |0.875734  |0.462963     |0.203252 |0.282486|
 |5    |0.859100  |0.462963     |0.178571 |0.257732|
 
-ได้ค่า mean และ SD ดังนี้ <br>
-Mean = 0.8288283658787255 <br>
-SD = 0.021048992024207288 <br>
-Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
+ได้ค่า Mean และ SD ดังนี้ <br>
+Mean Accuracy of Test set: 0.8577299412915853<br>
+STD: 0.010709705121340223 <br>
+Mean±SD of Accuracy = ( 0.8684396464129255 , 0.8470202361702451 )
 
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
 ![image](https://user-images.githubusercontent.com/101736826/189178365-9b99fe9e-53bf-44fb-9ac9-915cee66bf19.png)
@@ -136,12 +144,11 @@ Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
 ## 6.Discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
 - การ normalization เราใช้ StandardScaler เนื่องจากข้อมูลในแต่ละ Features มีการแจกแจงปกติอยู่แล้ว
+- เมื่อลองทำการเทรนข้อมูลที่ imbalance พบว่าค่า accuracy ของ data train set และ test set มีค่าสูงมาก (> 0.9) แต่ค่า Precision, Recall และ f1 มีค่าต่ำมาก (< 0.1) ดังนั้น เราจึงแก้ไขด้วยการทำ **`SMOTE`** (synthetic minority over-sampling technique)
 - ข้อมูลในเรื่อง Stroke Prediction มีความ imbalance เราจึงเลือกใช้ SMOTE (synthetic minority over-sampling technique)  จัดการกับข้อมูลในชุดนี้ก่อนจะนำไปใช้สร้าง Model จริง<br>
 ในข้อมูล Train Set มีเพียง 195 instances เท่านั้นที่เป็น class1 (หากผู้ป่วยเป็นโรคหลอดเลือดสมอง) แต่ในขณะที่ class0 (หากผู้ป่วยไม่เป็นโรคหลอดเลือดสมอง) มีถึง 3,892 instances<br>
 จากเหตุผลด้านบนทำให้ Model ไม่สามารถหา Pattern ที่แน่นอนของ class1 ได้ดีนัก ส่งผลให้ค่า Accuracy, Precision, Recall, F1 ของ class1 น้อยตามไปด้วย
 - การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
-- เมื่อลองทำการเทรนข้อมูลที่ imbalance พบว่าค่า accuracy ของ data train set และ test set มีค่าสูงมาก (> 0.9) แต่ค่า Precision, Recall และ f1 มีค่าต่ำมาก (< 0.1) ดังนั้น เราจึงแก้ไขด้วยการทำ **`SMOTE`** (synthetic minority over-sampling technique) เพื่อให้โมเดลสามารถเรียนรู้ได้ดีขึ้น
-  
 
 ## 7. Conclusion
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
@@ -149,10 +156,10 @@ Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
     
 |Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
 |------------------------|-----|---------------|-----|---------------|--------------------|
-|1. Accuracy            |0| | | | |
-|2. Precision           |0| | | | |
-|3. PrecisionRecall     |0| | | | |
-|4. F1 Score            | | | | | |
+|1. Accuracy            |0     |0.882583 |0.826810 |0.763209 |0.758317 |			
+|2. Precision           |0     |0.259259 |0.407407 |0.574074 |0.703704 |
+|3. PrecisionRecall     |0     |0.148936 |0.131737 |0.124000 |0.141264 |
+|4. F1 Score            |0     |0.189189 |0.199095 |0.203947 |0.235294 |
 
 ## 8. References
 - เทคนิคการเขียนโค้ดด้วยวิธี automl ของ The Keras ecosystem: <br>
