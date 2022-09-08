@@ -143,11 +143,6 @@ Non-trainable params: 0<br>
 
 ## _End Credit_
 
-|25%|	6410422005|	Metpiya Learakkakorn|	Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion|
-|25%|	6410422015|	Khodchapan Vitheethum|	Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion|
-|25%|	6410422017|	Peerat Pookpanich	Prepare| datase, Data cleaning, EDA, ML, MLP, Report, Conclusion|
-|25%|	6410422031|	Anyamanee Pornpanvattana|	Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion|
-
 <table>
   <tr>
     <td>25%</td>
