@@ -162,7 +162,7 @@ Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
  - API Keras  ของ Tensorflow Libary <br>
     **Link:** https://www.tensorflow.org/api_docs/python/tf
     
- - รู้จักกับปัญหา Dying ReLU
+ - รู้จักกับปัญหา Dying ReLU <br>
     **Authors:** Kenneth Leung <br>
     **Last modified:** 2021/03/31 <br>
     **Link:** https://towardsdatascience.com/the-dying-relu-problem-clearly-explained-42d0c54e0d24
