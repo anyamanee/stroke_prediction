@@ -115,17 +115,12 @@ Non-trainable params: 0<br>
 
 Mean = 0.8288283658787255 <br>
 SD = 0.021048992024207288 <br>
-Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
-
-
+Mean±SD of Accuracy = ( 0.8077793738545183 , 0.8498773579029328 )
 
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
-<PIC>
+![image](https://user-images.githubusercontent.com/101736826/189178365-9b99fe9e-53bf-44fb-9ac9-915cee66bf19.png)
 จากกราฟสังเกตได้ว่า ค่า accuracy ของ validation มีการขยับดีขึ้นเมื่อเทียบกับ train เมื่อมีการเทรนโมเดล XXX epoch ในขณะเดียวกัน loss ของ validation ลดลงมาอยู่ที่ประมาณ XXX แสดงให้เห็นว่าโมเดล goodfit
-
-#### Evaluation Metric
-  <PIC>
-
+  
 
 ## 6.Discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
