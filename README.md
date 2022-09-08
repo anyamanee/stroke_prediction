@@ -92,9 +92,8 @@ Non-trainable params: 0<br>
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay <br>(itial_learning_rate=1e-2, <br> decay_steps=10000, <br> decay_rate=0.9)|
 |Activation	    |[relu, tanh, sigmoid]	|tanh, sigmoid|
 |Optimizer      |Adam          | Adam|
-|
-- ฺBatch size = 16
-- Epoch = 100
+|Batch size     |-             |16|
+|Epoch          |-             |100|
 
 ## 5. Results
 โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์ที่ได้จาก test set ทั้ง 2 ตาราง
