@@ -151,6 +151,12 @@ SD: XXX
 - การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
 - สิ่งที่ไม่ตรงตามสมมติฐาน
+    
+|Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
+|1.| Accuracy            |0| | | | |
+|2.| Recall              |0| | | | |
+|3.| Precision           |0| | | | |
+|4.| F1 Score            | | | | | |
 
 ## 8. Recommendation
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่ (เท่าไหร่คือใหญ่?) ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น (???)
