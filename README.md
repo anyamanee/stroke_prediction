@@ -90,8 +90,7 @@ Non-trainable params: 0<br>
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
 |Activation	    |[relu, tanh, sigmoid]	|relu|
 
-ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
-เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที
+
 
 ## 5. Results
 โดยผลลัพธ์ในตารางข้อ 5.1 และ 5.2 เป็นผลลัพธ์ที่ได้จาก test set ทั้ง 2 ตาราง
@@ -122,11 +121,17 @@ Non-trainable params: 0<br>
 MEAN: XXX
 SD: XXX
 
+โดย ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
+เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที
+บน CPU XXX นาที
+
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
 <PIC>
 จากกราฟสังเกตได้ว่า ค่า accuracy ของ validation มีการขยับดีขึ้นเมื่อเทียบกับ train เมื่อมีการเทรนโมเดล XXX epoch ในขณะเดียวกัน loss ของ validation ลดลงมาอยู่ที่ประมาณ XXX แสดงให้เห็นว่าโมเดล goodfit
 
 #### Evaluation Metric
+  <PIC>
+
 
 ## 6. Experiment result and discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
