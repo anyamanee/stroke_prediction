@@ -61,9 +61,10 @@ Trainable params: 4,801<br>
 Non-trainable params: 0<br>
 |Layer (type)|Output Shape|Number of Parameter|Activation function|
 |------------|------------|-------------------|-------------------|
-|hidden1 (Dense)|	(None, 64)|	576|	relu|
-|hidden2 (Dense)|	(None, 64)|	4,160|	relu|
-|output (Dense)|	(None, 1)|	65|	relu|
+|hidden1 (Dense)|	(None, 89)|	801|	tanh|
+|hidden2 (Dense)|	(None, 72)|	6,408|	tanh|
+|dropout_1 (Dropout)| (None, 72)|	0|	-|
+|output (Dense)|	(None, 1)|	73|	sigmoid|
 
 ## 4. Training
 ### 4.1 Traditional Machine Learning (ML)
@@ -86,7 +87,7 @@ Non-trainable params: 0<br>
 |Hyperparameter	|List of value	|Best value for dataset|
 |---------------|---------------|----------------------|
 |Number of layer|[1,2,3]       	|3|
-|Number of node	|21, 22, ..., 100	|[ ]|
+|Number of node	|[21, 22, ..., 100]	|[ ]|
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|0.001|
 |Activation	    |[relu, tanh, sigmoid]	|relu|
 |Oprimizer      |    -          | ExponentialDecay|
