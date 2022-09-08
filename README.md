@@ -139,22 +139,22 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
 - Traditional Machine Learning (ML) ไม่จำเป็นต้องมีการ tuning hyperpsrsmeter มากนัก รวมถึงใช้เวลาและทรัพยากรในการเทรนค่อนข้างน้อยกว่า Multilayer Perceptron (MLP) 
 
 
-## 7. Conclusion & Discussion
+## 7. Discussion
 - การเทรนโมเดล MLP จำเป็นต้องทำการ tuning hyperparameter และใช้ทรัพยากรในการเทรนโมเดลมาก อย่างไรก็ตาม เนื่องจาก dataset นี้มีข้อมูลที่ไม่มากนัก ดังนั้น การใช้ traditional ML ซึ่งสามารถ tuning hyperparameter และใช้ทรัพยากรน้อยกว่าจึงเหมาะกับ dataset ชุดนี้มากกว่า
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
 - สิ่งที่ไม่ตรงตามสมมติฐาน
-    
+   
+
+## 8. Conclusion
+- Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
+- สำหรับ Dataset ขนาดเล็ก การใช้ traditional ML ในการพยากรณ์ข้อมูลนั้นเหมาะสมกว่าการใช้ MLP เพราะใช้ทรัพยากรในการ train model น้อยกว่า
+- การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
 |Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
 |------------------------|-----|---------------|-----|---------------|--------------------|
 |1. Accuracy            |0| | | | |
 |2. Precision           |0| | | | |
 |3. PrecisionRecall     |0| | | | |
 |4. F1 Score            | | | | | |
-
-## 8. Recommendation
-- Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
-- สำหรับ Dataset ขนาดเล็ก การใช้ traditional ML ในการพยากรณ์ข้อมูลนั้นเหมาะสมกว่าการใช้ MLP เพราะใช้ทรัพยากรในการ train model น้อยกว่า
-- การปรับจำนวน layer ของ MLP ควรมีค่าไม่เกินจำนวน hyperparameter ที่เราจะทำการปรับ
 
 ## 9. References
 - เทคนิคการเขียนโค้ดด้วยวิธี automl ของ The Keras ecosystem: <br>
