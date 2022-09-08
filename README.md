@@ -119,7 +119,14 @@ Non-trainable params: 0<br>
 |3	  |0        |	0        |	0     |	0 |
 |4	  |0	      |0         |	0	    |0  |
 |5	  |0        |	0	       |0	      |0  |
+MEAN: XXX
+SD: XXX
 
+#### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
+<PIC>
+จากกราฟสังเกตได้ว่า ค่า accuracy ของ validation มีการขยับดีขึ้นเมื่อเทียบกับ train เมื่อมีการเทรนโมเดล XXX epoch ในขณะเดียวกัน loss ของ validation ลดลงมาอยู่ที่ประมาณ XXX แสดงให้เห็นว่าโมเดล goodfit
+
+#### Evaluation Metric
 
 ## 6. Experiment result and discussion
 - สำหรับการ train model หนึ่งในสิ่งสำคัญคือการเลือกใช้ฟีเจอร์เพื่อไม่ให้ model มีความ overfit มากเกินไป ดังนั้น เราจึงเริ่มจากการดูค่า correlation ของตัวแปรต่างๆ ต่อการเป็นโรคหลอดเลือดสมอง (stroke) ซึ่งหาก correlation มีค่ามาก หมายถึงมีความสัมพันธ์ต่อการเป็น stroke มาก เช่น อายุ การเป็นโรคหัวใจ เป็นต้น
