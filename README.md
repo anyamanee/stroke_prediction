@@ -148,8 +148,8 @@ Mean±SD of Accuracy = (0.8077793738545183,0.8498773579029328)
 |Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
 |------------------------|-----|---------------|-----|---------------|--------------------|
 |1. Accuracy            |0| | | | |
-|2. Recall              |0| | | | |
-|3. Precision           |0| | | | |
+|2. Precision           |0| | | | |
+|3. PrecisionRecall     |0| | | | |
 |4. F1 Score            | | | | | |
 
 ## 8. Recommendation
