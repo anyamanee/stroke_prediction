@@ -90,7 +90,7 @@ Non-trainable params: 0<br>
 |Number of node	|[21, 22, ..., 100]	|89, 72|
 |Learning rate	|[0.01, 0.001, 0.0001, 0.00001]	|ExponentialDecay <br>(itial_learning_rate=1e-2, <br> decay_steps=10000, <br> decay_rate=0.9)|
 |Activation	    |[relu, tanh, sigmoid]	|tanh, sigmoid|
-|Oprimizer      |Adam          | Adam|
+|Optimizer      |Adam          | Adam|
 
 
 ## 5. Results
@@ -125,7 +125,7 @@ SD: XXX
 
 โดย ทำการเทรนโดยใช้ GPU 1 ตัว, GPU No. 0: Name = /physical_device:GPU:0 <br>
 เวลาที่ใช้ในการเทรนโดยประมาณ XX.XX นาที
-บน CPU XXX นาที
+และบน CPU ใช้เวลาในการเทรนโดยประมาณ 6m 54.2s
 
 #### กราฟการแสดงผลการเทรนโมเดลด้วย data train set vs. data test set
 <PIC>
