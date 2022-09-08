@@ -154,10 +154,10 @@ SD: XXX
     
 |Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
 |------------------------|-----|---------------|-----|---------------|--------------------|
-|1.| Accuracy            |0| | | | |
-|2.| Recall              |0| | | | |
-|3.| Precision           |0| | | | |
-|4.| F1 Score            | | | | | |
+|1. Accuracy            |0| | | | |
+|2. Recall              |0| | | | |
+|3. Precision           |0| | | | |
+|4. F1 Score            | | | | | |
 
 ## 8. Recommendation
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่ (เท่าไหร่คือใหญ่?) ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น (???)
