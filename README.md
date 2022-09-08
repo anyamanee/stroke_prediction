@@ -153,6 +153,7 @@ SD: XXX
 - สิ่งที่ไม่ตรงตามสมมติฐาน
     
 |Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
+|------------------------|-----|---------------|-----|---------------|--------------------|
 |1.| Accuracy            |0| | | | |
 |2.| Recall              |0| | | | |
 |3.| Precision           |0| | | | |
