@@ -187,6 +187,6 @@ Non-trainable params: 0<br>
 |25% |6410422005     |Metpiya Learakkakorn|Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|    
 |25% |6410422015     |Khodchapan Vitheethum |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
 |25% |6410422017     |Peerat Pookpanich |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
-|25% |6410422031     |Anyamanee Pornpanvattana |Prepare t, Data cleaning, EDA, ML, MLP, Report, Conclusion |
+|25% |6410422031     |Anyamanee Pornpanvattana |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion |
 
 _งานชิ้นนี้เป็นส่วนหนึ่งของ วิชาการวิเคราะห์เชิงกำหนดและการหาค่าเหมาะสุดประยุกต์ หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาการวิเคราะห์ข้อมูลและวิทยาการข้อมูล มหาวิทยาลัยสถาบันบัณฑิตพัฒนบริหารศาสตร์_
