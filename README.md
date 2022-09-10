@@ -100,7 +100,7 @@ Non-trainable params: 0<br>
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
 |------------------------|----------|----------|----------|--|
-|RandomForest	|	88.26%|	25.93%|	14.89%|	18.92%|
+|RandomForest	|	88.26%👏🏻|	25.93%|	14.89%|	18.92%|
 |KNN|	82.68%	|40.74%|	13.17%|	19.91%|
 |XGBClassifier	|76.32%|	57.41%|	12.40%|	20.39%|
 |LogisticRegression	|75.83%|	70.37%|	14.13%|	23.53%|
@@ -152,9 +152,9 @@ Non-trainable params: 0<br>
     
 |Performance<br>Measures|MLP|RandomForest|KNN|XGBClassifier|LogisticRegression|
 |-----------------------|---|------------|---|-------------|------------------|     
-|1. Accuracy |85.77% |88.26% |82.68% |76.32% |75.83% |  
+|1. Accuracy |85.77% |88.26% 👏🏻|82.68% |76.32% |75.83% |  
 |2. Precision |85.77% |25.93% |40.74% |57.41% |70.37% |  
-|3. PrecisionRecall |17.40% |14.89% |13.17% |12.40% |14.13% |  
+|3. Recall |17.40% |14.89% |13.17% |12.40% |14.13% |  
 |4. F1 Score |25.04% |18.92% |19.91% |20.39% |23.53% |
 
 ## 8. References
