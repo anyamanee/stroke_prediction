@@ -192,4 +192,13 @@ Non-trainable params: 0<br>
 |25% |6410422017     |Peerat Pookpanich |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
 |25% |6410422031     |Anyamanee Pornpanvattana |Prepare t, Data cleaning, EDA, ML, MLP, Report, Conclusion |
 
+```
+@Misc{3PM,
+    AUTHOR          = {Metpiya Lea. , Khodchapan Vit. , Peerat Poo. , Anyamanee Por.},
+    TITLE           = {compared Traditional ML and MLP in classification},
+    YEAR            = {2022},
+    howpublished    = "\url{https://github.com/anyamanee/stroke_prediction}"
+}
+```
+
 _งานชิ้นนี้เป็นส่วนหนึ่งของ วิชาการวิเคราะห์เชิงกำหนดและการหาค่าเหมาะสุดประยุกต์ หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาการวิเคราะห์ข้อมูลและวิทยาการข้อมูล มหาวิทยาลัยสถาบันบัณฑิตพัฒนบริหารศาสตร์_
