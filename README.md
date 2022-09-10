@@ -180,10 +180,6 @@ Non-trainable params: 0<br>
     **Last modified:** 2021/03/31 <br>
     **Link:** https://towardsdatascience.com/the-dying-relu-problem-clearly-explained-42d0c54e0d24
  
-## _Citing_
-\cite{key}
-
-
 ## _End Credit_
 
 |Working Percentage|  ID |  Name | Details |
