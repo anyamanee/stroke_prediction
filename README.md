@@ -185,31 +185,11 @@ Non-trainable params: 0<br>
 
 ## _End Credit_
 
-<table>
-  <tr>
-    <td>25%</td>
-    <td>6410422005</td>
-    <td>Metpiya Learakkakorn</td>
-    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
-  </tr>
-  <tr>
-    <td>25%</td>
-    <td>6410422015</td>
-    <td>Khodchapan Vitheethum</td>
-    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
-  </tr>
-  <tr>
-    <td>25%</td>
-    <td>6410422017</td>
-    <td>Peerat Pookpanich</td>
-    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion</td>
-  </tr>
-  <tr>
-    <td>25%</td>
-    <td>6410422031</td>
-    <td>Anyamanee Pornpanvattana</td>
-    <td>Prepare datase, Data cleaning, EDA, ML, MLP, Report, Conclusion </td>
-  </tr>
-</table>
+|Working Percentage|  ID |  Name | Details |
+|------------------------|-----|---------------|-----|
+|25% |6410422005     |Metpiya Learakkakorn|Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|    
+|25% |6410422015     |Khodchapan Vitheethum |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
+|25% |6410422017     |Peerat Pookpanich |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
+|25% |6410422031     |Anyamanee Pornpanvattana |Prepare t, Data cleaning, EDA, ML, MLP, Report, Conclusion |
 
 _งานชิ้นนี้เป็นส่วนหนึ่งของ วิชาการวิเคราะห์เชิงกำหนดและการหาค่าเหมาะสุดประยุกต์ หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาการวิเคราะห์ข้อมูลและวิทยาการข้อมูล มหาวิทยาลัยสถาบันบัณฑิตพัฒนบริหารศาสตร์_
