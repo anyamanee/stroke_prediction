@@ -47,6 +47,12 @@ MLP: Train 80%, validation 20% ของ Train set และ Test 20%<br>
 
 ![image](https://user-images.githubusercontent.com/101736826/187707794-38780d34-8cc0-4fd0-95de-48e3eda8c46f.png)
 
+- Data Cleaning: เราทำการ drop dataset 1 row จาก 5,110 rows เนื่องจากใน Gender show "Other" ไม่สามารถจำแนกเพศได้
+- Data Transformation: 
+  1. จัดการข้อมูล Binary category และ Multicategory โดยใช้ **`One-Hot encoding`** เพื่อเปลี่ยนข้อมูลที่เก็บในลักษณะ categorical ให้อยู่ในรูป Binary values เนื่องจากการทำ Machine leaning นั้นต้องการข้อมูลในรูปแบบตัวเลขเพื่อใช้ในการ train และ predict โดยแปลงค่าในคอลัมน์ gender, ever_married <br>
+  2. เนื่องจาก dataset ของมีปัญหา class imbalance จึงเลือกใช้วิธี **`SMOTE`** (synthetic minority over-sampling technique ซึ่งเป็นเทคนิคที่ใช้ในการแก้ปัญหาการจำแนกข้อมูลที่ไม่สมดุล
+  3. ทำการ normalize ค่าด้วย StandardScaler และ OneHotEncoding <br>
+
 ## 3. Network architecture
 Total params: 7,354<br>
 Trainable params: 7,354<br>
