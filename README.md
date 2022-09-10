@@ -31,6 +31,7 @@ Deep Learning เป็นการเรียนรู้เชิงลึก
 *Note: "Unknown" ในคอลัมน์ smoking_status หมายถึงไม่มีข้อมูลสำหรับผู้ป่วยรายนี้* <br>
 
 ### EDA
+
 - จากการสำรวจ dataset พบว่าปัจจัยที่ส่งผลต่อการเป็นโรคหลอดเลือดสมองโดยดูจากค่า correlation มากที่สุด 5 อันดับแรก ได้แก่
   1. อายุ โดยมีค่า correlation ที่ 0.245281
   2. การเป็นโรคหัวใจ โดยมีค่า correlation ที่ 0.134905
@@ -113,15 +114,11 @@ Non-trainable params: 0<br>
 ### 5.2 Multilayer Perceptron (MLP)
 โดยค่าเฉลี่ยของ Accuracy ด้านบนนั้น มากจากการคำนวณค่าเฉลี่ยของ Accuracy ในการเทรนโมเดลลด้วย initial random weights ที่แตกต่างกัน 5 รอบ <br>
 ทำการเทรนโดยใช้ <br>
-- CPU: AMD Ryzen 7 4700U with Radeon Graphics
-  - visual studio: 6m
-  - colab: 11m
-- GPU No. 11 จำนวน 1 ตัว
-  - colab: 15m<br>
-
-และ<br>
-- CPU: HP ZBook Firefly 14 inch G8 Mobile Workstation PC
-Processor    11th Gen Intel(R) Core(TM) i7-1185G7<br>
+|CPU/GPU/TPU Name|Training Duration (MLP)|
+|------------|------------|
+|AMD Ryzen 7 4700U |6m|
+|Google Colab: Tesla T4 |15m| 
+|Google Colab: Tesla P100-PCIE-16GB|14m|  
 
 ได้ค่า Mean และ SD ดังนี้ <br>
 |round|Accuracy|	Precision|	Recall	|F1|
@@ -154,12 +151,12 @@ Processor    11th Gen Intel(R) Core(TM) i7-1185G7<br>
 - Dataset ที่เหมาะกับการ predict ค่าด้วย MLP ควรเป็น Dataset ที่มีขนาดใหญ่กว่าชุดข้อมูลที่ใช้ทำการทดลองในครั้งนี้ ทั้งนี้เพื่อให้มีข้อมูลจำนวนมากพอในการเทรนและเรียนรู้เพื่อนำไปพยากรณ์ผลลัพท์ที่แม่นยำมากยิ่งขึ้น
 - ผลจากการเทรนโมเดลพบว่า RandomForestClassifier ซึ่งเป็น traditional ML ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.882583 ในขณะที่ MLP ให้ค่า Accuracy สูงที่สุดอยู่ที่ 0.XXX เท่านั้น
     
-|Performance<br> Measures|	MLP|	RandomForest | KNN | XGBClassifier | LogisticRegression |
-|------------------------|-----|---------------|-----|---------------|--------------------|
-|1. Accuracy            |0     |0.882583 |0.826810 |0.763209 |0.758317 |			
-|2. Precision           |0     |0.259259 |0.407407 |0.574074 |0.703704 |
-|3. PrecisionRecall     |0     |0.148936 |0.131737 |0.124000 |0.141264 |
-|4. F1 Score            |0     |0.189189 |0.199095 |0.203947 |0.235294 |
+|Performance<br>Measures|MLP|RandomForest|KNN|XGBClassifier|LogisticRegression|
+|-----------------------|---|------------|---|-------------|------------------|     
+|1. Accuracy |0 |88.26% |82.68% |76.32% |75.83% |  
+|2. Precision |0 |25.93% |40.74% |57.41% |70.37% |  
+|3. PrecisionRecall |0 |14.89% |13.17% |12.40% |14.13% |  
+|4. F1 Score |0 |18.92% |19.91% |20.39% |23.53% |
 
 ## 8. References
 - เทคนิคการเขียนโค้ดด้วยวิธี automl ของ The Keras ecosystem: <br>
