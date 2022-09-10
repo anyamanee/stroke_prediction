@@ -100,7 +100,7 @@ Non-trainable params: 0<br>
 
 |Classification algorithm|	Accuracy|	Precision|	Recall	|F1|
 |------------------------|----------|----------|----------|--|
-|RandomForest👏	|	88.26%🏻|	25.93%|	14.89%|	18.92%|
+|RandomForest👏	|	88.26%|	25.93%|	14.89%|	18.92%|
 |KNN|	82.68%	|40.74%|	13.17%|	19.91%|
 |XGBClassifier	|76.32%|	57.41%|	12.40%|	20.39%|
 |LogisticRegression	|75.83%|	70.37%|	14.13%|	23.53%|
