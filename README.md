@@ -180,25 +180,17 @@ Non-trainable params: 0<br>
     **Last modified:** 2021/03/31 <br>
     **Link:** https://towardsdatascience.com/the-dying-relu-problem-clearly-explained-42d0c54e0d24
  
- 
+## _Citing_
+\cite{key}
 
 
 ## _End Credit_
 
 |Working Percentage|  ID |  Name | Details |
-|------------------------|-----|---------------|-----|
+|------------------|-----|-------|---------|
 |25% |6410422005     |Metpiya Learakkakorn|Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|    
 |25% |6410422015     |Khodchapan Vitheethum |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
 |25% |6410422017     |Peerat Pookpanich |Prepare dataset, Data cleaning, EDA, ML, MLP, Report, Conclusion|
 |25% |6410422031     |Anyamanee Pornpanvattana |Prepare t, Data cleaning, EDA, ML, MLP, Report, Conclusion |
-
-```
-@Misc{3PM,
-    AUTHOR          = {Metpiya Lea. , Khodchapan Vit. , Peerat Poo. , Anyamanee Por.},
-    TITLE           = {compared Traditional ML and MLP in classification},
-    YEAR            = {2022},
-    howpublished    = "\url{https://github.com/anyamanee/stroke_prediction}"
-}
-```
 
 _งานชิ้นนี้เป็นส่วนหนึ่งของ วิชาการวิเคราะห์เชิงกำหนดและการหาค่าเหมาะสุดประยุกต์ หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาการวิเคราะห์ข้อมูลและวิทยาการข้อมูล มหาวิทยาลัยสถาบันบัณฑิตพัฒนบริหารศาสตร์_
